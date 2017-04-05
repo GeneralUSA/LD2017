@@ -1,0 +1,316 @@
+/*  TO DO LIST 
+*	need to fix buttons
+*	create Constitution page & get all pages looking like main page
+*	run another app package test
+*	apple dev license
+*	try out the cool menu that moves to arrow ... code is under text file name
+*	" cssTest_workingCode_junkComments "  inside the GV shared folder for apps
+
+*/
+
+
+html, body, div.main, img.headerImg {
+	background-color: #788897;	
+	width: 100%;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	color: #ffffff;
+	font-size: medium;
+	line-height: 1.5em;
+}
+
+/* app meat links to date & scripture*/
+
+/*  A Lawyer's Dev text image  */
+img.headerImg{
+	/*display: block;*/
+	background: url(images/SplashScreen620x300p-crop.png);
+	background-repeat: no-repeat;
+/*	background-attachment: fixed;*/
+/*	max-height: 30%;*/
+	width: 100%;
+	position: fixed;
+	margin-top: -3%;
+	padding: 0px 0px 0px 0px;
+	vertical-align: top;
+}
+
+/* end Header Image section */
+
+/*  Menu & change Buttons  */
+.menu {
+	position: fixed;
+	width: 100%;
+/*	margin: 4px,0px,0px,0px;
+	padding-left: 2px;*/
+	color: white;
+	background-color: #45617d;
+	/*border: ridge; 
+	border-color: #45617d;*/	
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: x-small;
+/*	align-items: stretch;
+*/	
+}
+
+/*#menu.menu{
+	
+	width: 100%;
+	height: 4%;
+	position: fixed;
+
+}*/
+
+.navImg {
+
+	width: 30px;
+	height: 30px;
+	align-items: center;
+	position: fixed;
+}
+
+
+table {
+	font-size: small;	
+	/*background-color: royalblue;*/
+	column-span: all;
+	width: 100%;
+	height: 10%;
+	margin-top: 20px;
+	padding: 2px;
+	border: thick;
+}
+
+tr {
+	border: thin;
+/*	background-color: aqua;*/
+}
+
+tr.td2 {
+	border: none;
+	}
+td {
+	border: none;
+	alignment-baseline: bottom;
+/*	width: 4px;
+*/
+/*	column-width: inherit;
+*/}
+
+/*td.td1 {
+	align-items: center;
+	width: 10%;
+	background-color: #264d73; 
+	font-size: xx-large;
+	color: red;
+}
+*/
+td.td2 {
+	align-items: center;
+	vertical-align: middle;
+	width: 8%;
+	padding: 2% 0% 0% 2%;
+
+}
+
+/*#spacer {
+	width: 15%;
+	background-color: aqua;
+}
+*/
+/*#buttons.buttons {
+	position: relative;
+	top: -3px;
+	right: 30px;
+	border: 1px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+	margin-top: 0px;
+	background-color: rebeccapurple;
+}
+.bgColor1 {
+    background-color: #94A1AD;
+
+}
+.bgColor2 {
+    background-color: #45617d;
+}
+.bgColor3 {
+    background-color: #242629;	  
+	}*/
+
+/*td.share {
+	border-image-slice: url(images/[000153].png);	
+	
+}  */
+
+/*  end --Menu & color rounds  */
+
+/*  The job section */
+
+#today {
+   /* same as div.container section and same as div.main*/
+}
+
+div.container {
+	/*margin: 4% 4% 0% 4%;*/
+/*	padding: 18%,2%,0%,2% ;*/
+	text-align: justify;
+	/*border: ridge; 
+	border-color: #45617d;*/
+	
+}
+
+table.about {
+	padding: 18%,2%,0%,2% ;
+
+}
+
+#about {
+	/*color: aqua;*/ 
+	text-align: left;
+	font-size: medium;
+	padding: 3%;
+	vertical-align: top;
+	margin: 0px;
+
+}
+
+td.imgTable {
+	vertical-align: text-top;
+	/*background-color: brown;*/
+}
+
+a.aboutLink {
+	font-stretch: expanded;
+	font-weight: 900;
+	color: #1E3B56;
+	/*background-color: brown;*/
+}
+
+
+
+/*   #CurrentDate & h1.date both yield SAME results  */
+
+#CurrentDate { 
+/*	font-weight: 900;*/
+/*	color: blueviolet;
+*/}
+
+h1 {
+	font-size: 250%;
+	padding-top: 40%;
+}
+
+h1.date {
+	color: aqua;
+	margin-top: 3%;
+}
+
+h1, h2 {
+	padding-left: 5%;
+	margin-top: 7%;
+	margin-left: 2%;
+}
+
+h2 {
+	font-size: 125%;
+}
+
+p {
+	padding-left: 7%;
+	padding-right: 7%;
+	font-size: 125%;
+}
+
+p.paraTop{
+	padding-top: 70px;
+	padding-bottom: 0%;
+}
+
+p.quote , p.quote2 {
+	font-size: 130%;
+/*	font-weight: 700;
+*/}
+
+
+p.refT , p.refT2  {
+	padding-right: 10%;
+	font-size: 125%;
+	font-style: italic;
+	text-align: right;
+}
+
+p.refT2 {
+
+	color: aqua;
+}
+
+/* end the job section */
+
+.ui-datepicker-year{
+    display:none;
+}
+
+table.share {
+	
+	bottom: 4em;
+	position: fixed;  	/* needs to be "position: fixed" to move to bottom */
+	border-bottom-right-radius: 20%; 	
+	text-align: right;
+	background-color: aqua;
+	vertical-align: bottom;
+}
+
+
+footer {
+	/*display: block;*/
+	font-size: xx-small;
+	text-align: center;
+	vertical-align: text-bottom;
+	background-color: #1E3B56;	
+	font-style: italic;
+	margin: 0px;
+	padding: 2%;
+	height: 5em;
+	position: fixed;		/* need both position:fixed & bottom to push footer */
+	bottom: 0;				/* to the bottom of the page */
+	width: 96%;				/* need width too, but 100% on DW makes a horizontal scroll */
+	
+}
+
+
+/*  unnecessary additons */
+.feed{
+	font-size: medium;
+}
+#constitution {
+	font-size: small;
+	font-weight: normal;
+	background-color: #032545;
+	padding: 0% 0px 0% 0%;
+	margin: 0px 0px 0px 0px;
+
+}
+
+.highlight {
+	font-weight: bold;
+	color: hotpink;	
+
+}
+
+
+/* LINK SECTION COLOR CHANGE */
+a:link {
+	color: white;
+}
+a:visited{
+	color: darkturquoise;
+}
+a:hover{
+	color: #2F4B8C;
+}
+
+/* end unnecessary additions */
