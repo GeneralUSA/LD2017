@@ -2,19 +2,19 @@
 *	need to fix buttons
 *	create Constitution page & get all pages looking like main page
 *	run another app package test
-*	apple dev license
+*	apple dev license	DONE
 *	try out the cool menu that moves to arrow ... code is under text file name
 *	" cssTest_workingCode_junkComments "  inside the GV shared folder for apps
 
 */
 
 
-html, body, div.main, img.headerImg {
-	background-color: #788897;	
+html, body, div.main {
+	background-color: #45617d;	   /*  #788897 */
 	width: 100%;
-	margin: 0px;
-	border: 0px;
-	padding: 0px;
+	margin: 0%;
+	padding: 0%;
+	border: 0%;
 	color: #ffffff;
 	font-size: medium;
 	line-height: 1.5em;
@@ -22,54 +22,61 @@ html, body, div.main, img.headerImg {
 
 /* app meat links to date & scripture*/
 
+
+/*  Menu & change Buttons  */
+
+#menu {
+	
+	width: 100%;
+	/*height: 1%;*/
+	position: fixed;
+	margin: 0px;
+	padding: 0px;
+	/*background-color: green;*/
+
+}
+
 /*  A Lawyer's Dev text image  */
 img.headerImg{
-	/*display: block;*/
-	background: url(images/SplashScreen620x300p-crop.png);
+/*	display: block;
+	background: url(images/SplashScreen620x300px201_crop.png);
 	background-repeat: no-repeat;
-/*	background-attachment: fixed;*/
-/*	max-height: 30%;*/
+	background-attachment: fixed;
+	max-height: 30%;*/
 	width: 100%;
-	position: fixed;
-	margin-top: -3%;
-	padding: 0px 0px 0px 0px;
+	/*position: fixed;*/
+	margin-top: 0%;				/* this moves very top image down & linked */  
+	padding: 0px ;					/*  somehow to container */
 	vertical-align: top;
 }
 
 /* end Header Image section */
-
-/*  Menu & change Buttons  */
 .menu {
-	position: fixed;
+	/*position: fixed;*/
 	width: 100%;
-/*	margin: 4px,0px,0px,0px;
-	padding-left: 2px;*/
+	margin: 0% ;
+	padding: 0% ;
 	color: white;
-	background-color: #45617d;
+	background-color: #1E3B56;      /*  #45617d  */
 	/*border: ridge; 
 	border-color: #45617d;*/	
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: x-small;
 /*	align-items: stretch;
 */	
+	border-bottom-right-radius: 20%; 
+	border-top-left-radius: 5%;
 }
-
-/*#menu.menu{
-	
-	width: 100%;
-	height: 4%;
-	position: fixed;
-
-}*/
 
 .navImg {
 
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	align-items: center;
 	position: fixed;
+	margin: 0px 4px 0px 0px;
+	padding: 2px 2px 0px 0px;
 }
-
 
 table {
 	font-size: small;	
@@ -80,6 +87,14 @@ table {
 	margin-top: 20px;
 	padding: 2px;
 	border: thick;
+	background-color: transparent;
+}
+
+th{
+	padding: 9% 0% 0% 0%;
+	font-weight: 700;
+	font-size: xx-large;
+	color: #0D2032;			/*  #0D2032  dark blue */
 }
 
 tr {
@@ -110,10 +125,22 @@ td.td2 {
 	align-items: center;
 	vertical-align: middle;
 	width: 8%;
-	padding: 2% 0% 0% 2%;
+	padding: 2% 0% 0% 4%;
 
 }
 
+/* LINK SECTION COLOR CHANGE */
+a:link {
+	color: white;
+}
+a:visited{
+	color: darkturquoise;
+}
+a:hover{
+	color: #94879E;
+}
+
+/*  END OF HEADER MENU section */
 /*#spacer {
 	width: 15%;
 	background-color: aqua;
@@ -148,65 +175,35 @@ td.td2 {
 
 /*  end --Menu & color rounds  */
 
+/*  END OF OLD MENU BUTTON sections */
+
+
 /*  The job section */
 
-#today {
-   /* same as div.container section and same as div.main*/
-}
-
-div.container {
-	/*margin: 4% 4% 0% 4%;*/
-/*	padding: 18%,2%,0%,2% ;*/
+/* #today same as div.container section and same as div.main*/
+.container { 
+	margin: 0% 2% 0% 2%;
+	padding: 0% 1% 0% 1% ;
 	text-align: justify;
-	/*border: ridge; 
-	border-color: #45617d;*/
+	border: ridge; 
+	border-color: transparent;		/* #45617d */
 	
 }
-
-table.about {
-	padding: 18%,2%,0%,2% ;
-
-}
-
-#about {
-	/*color: aqua;*/ 
-	text-align: left;
-	font-size: medium;
-	padding: 3%;
-	vertical-align: top;
-	margin: 0px;
-
-}
-
-td.imgTable {
-	vertical-align: text-top;
-	/*background-color: brown;*/
-}
-
-a.aboutLink {
-	font-stretch: expanded;
-	font-weight: 900;
-	color: #1E3B56;
-	/*background-color: brown;*/
-}
-
 
 
 /*   #CurrentDate & h1.date both yield SAME results  */
 
-#CurrentDate { 
-/*	font-weight: 900;*/
-/*	color: blueviolet;
-*/}
+#CurrentDate {
+	font-weight: 900;
+	/*	color: blueviolet;*/  
+	}
 
-h1 {
-	font-size: 250%;
-	padding-top: 40%;
-}
 
 h1.date {
-	color: aqua;
-	margin-top: 3%;
+	font-size: 250%;
+	padding-top: 20%;
+/*	color: aqua;*/
+	margin-top: 30%;
 }
 
 h1, h2 {
@@ -217,6 +214,7 @@ h1, h2 {
 
 h2 {
 	font-size: 125%;
+	text-align: left
 }
 
 p {
@@ -232,8 +230,8 @@ p.paraTop{
 
 p.quote , p.quote2 {
 	font-size: 130%;
-/*	font-weight: 700;
-*/}
+/*	font-weight: 700;  */
+	}
 
 
 p.refT , p.refT2  {
@@ -250,31 +248,17 @@ p.refT2 {
 
 /* end the job section */
 
-.ui-datepicker-year{
-    display:none;
-}
 
-table.share {
-	
-	bottom: 4em;
-	position: fixed;  	/* needs to be "position: fixed" to move to bottom */
-	border-bottom-right-radius: 20%; 	
-	text-align: right;
-	background-color: aqua;
-	vertical-align: bottom;
-}
-
-
-footer {
+#footer, footer.footer {
 	/*display: block;*/
 	font-size: xx-small;
 	text-align: center;
 	vertical-align: text-bottom;
-	background-color: #1E3B56;	
+	background-color: #1E3B56;	          /*#1E3B56*/
 	font-style: italic;
 	margin: 0px;
 	padding: 2%;
-	height: 5em;
+	height: 3em;
 	position: fixed;		/* need both position:fixed & bottom to push footer */
 	bottom: 0;				/* to the bottom of the page */
 	width: 96%;				/* need width too, but 100% on DW makes a horizontal scroll */
@@ -282,7 +266,78 @@ footer {
 }
 
 
+/*  ABOUT section */
+table.about {
+	padding: 0%,2%,0%,2% ;
+
+}
+
+#about {
+	color: white; 
+	text-align: left;
+	font-size: medium;
+	vertical-align: top;
+	margin: 15% 0% 0% 0%;
+	padding: 15% 0% 0% 0%;
+
+}
+
+td.imgTable {
+	vertical-align: text-top;
+	margin: 0%;
+	padding: 3% 0% 0% 0%;
+	background-color: transparent;
+}
+
+a.aboutLink {
+	font-stretch: expanded;
+	font-weight: 900;
+	font-size: large;
+	color: #BECEDC;				/*  #1E3B56  */
+	/*background-color: brown;*/
+}
+
+
+form.feedback {
+	margin: 0% 0% 0% -5%;
+	/*color: aqua;*/
+	}
+label {
+	/*color: red;*/
+	font-size: medium;
+}
+
+/*  END OF ABOUT section */
+
+
 /*  unnecessary additons */
+
+/*.ui-datepicker-year{
+    display:none;
+}*/
+
+#dailyquote {
+	color: bisque;
+	font-size: small;
+	
+}
+
+
+
+table.share {
+	
+	bottom: 3em;
+	position: fixed;  	/* needs to be "position: fixed" to move to bottom */
+	border-bottom-right-radius: 30%; 
+	border-top-left-radius: 50%;
+	text-align: right;
+	background-color: #788897;
+	vertical-align: bottom;
+}
+
+
+
+
 .feed{
 	font-size: medium;
 }
@@ -302,15 +357,37 @@ footer {
 }
 
 
-/* LINK SECTION COLOR CHANGE */
-a:link {
-	color: white;
+/* ////////////   */
+
+
+
+.pick-date>h1,
+.pick-date>input {
+  display: inline-block;
 }
-a:visited{
-	color: darkturquoise;
+.pick-date>input[type="date"]
+ {
+	align-content: space-around;
+	color: aqua;
+/*	padding: 0% 0% 0% 20%;
+	margin: 0% 0% 0% 20%;*/
+
+    width: 100%;
+    padding: 112px 20px;
+    margin: 18px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
 }
-a:hover{
-	color: #2F4B8C;
+
+.pick-date>h2,h3 {
+	padding: 0% 0% 0% 7%;
+	margin: 0% 0% 0% 0%;
+}
+
+.pick-date>refT,refT2 {
+	text-align: right;
 }
 
 /* end unnecessary additions */
