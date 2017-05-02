@@ -1,7 +1,128 @@
 ﻿"use strict";
 
-(function (script) { 
-    var a = {
+/*//  change background color
+function bgColor1() {
+	
+	document.body.style.fgroundColor = "red";
+}
+function bgColor2() {
+	
+	document.body.style.backgroundColor = "bgColor2";
+}
+function bgColor3() {
+	
+	document.body.style.backgroundColor = "gColor3";
+}
+
+
+
+$("#bgColor1").click(function() {
+ $( 'div').removeClass();
+ $( 'div').addClass('bgColor1');
+});
+
+$("#bgColor2").click(function() {
+ $( 'div').removeClass();
+ $( 'div').addClass('bgColor2');
+});
+
+$("#bgColor3").click(function() {
+ $('div').removeClass();
+ $('div').addClass('bgColor3');
+});
+
+
+// from YT Frontend Tips channel
+$(function() {
+  $('.navBar').click(function() {
+    $('.stick').toggleClass('trigger');
+  });
+});*/
+
+/*function toggleCP(){
+	var cp = document.getElementById("cp");
+	cp.style.height = window.innerHeight - 60+"px";
+	if(cp.style.right === "0px"){
+		cp.style.right = "-260px";
+	} else {
+		cp.style.right = "0px";
+	}
+}
+
+    for(var i = 0; i < 40; i++){ document.write("<h2>"+(i+1)+". Dummy page content ... </h2>"); }
+console.log(toggleCP);*/
+
+
+/*
+    function date() {
+        var dateVal = document.getElementById("date").dateFormat.value;
+        console.log("Your typed in " a + dateVal);
+    }*/
+
+/* $(function() {
+     $( "#myTextField" ).datepicker({
+		         changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+		 dateFormat: 'MMMM D',
+        onClose: function(){
+            validate($(this).val());
+         }
+     });
+     
+     $("#date2").click(function(){
+         alert("You have selected :" + $( "#myTextField" ).val());
+     });
+     
+     function validate(dateText){
+         try {
+            alert("You selected is : "+ $.datepicker.parseDate('mm/dd/yy',dateText));
+          } catch (e) {
+             alert("invalid date");
+          }; 
+    }
+  });
+
+
+$('#date').datepicker( {
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        dateFormat: 'dd MM'
+    });
+
+*/
+
+// kh attempt work for calendar section
+
+/*$("select").on("click", function () {
+	if (addEventListener(Array(() === PickedDate())
+	$(this).append("<quoteContainer>");
+	
+	return;
+});
+*/
+
+
+/*$(document).ready(function(){
+  $("#secondButton").click(function(){
+    $("#deftext").val("Cindy");
+  });
+});
+
+
+$('#textboxIdKH').datepicker().datepicker('setDate', theCurrentDate;*/
+
+
+
+/*$(function() {
+	$( "#Datepicker1" ).datepicker(); 
+});*/
+
+$(function (checkDate) {
+	
+	/*$( "" ).datepicker();*/ 
+    var quotePicker = {
         "January 1": { "quote": "But this is the covenant that I will make with the house of Israel after those days, declares the Lord: I will put my law within them, and I will write it on their hearts.  And I will be their God, and they shall be my people.", "refTag": "Jeremiah 31:33" },
         "January 2": { "quote": "For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin.", "refTag": "Romans 3:20" },
         "January 3": { "quote": "For the law brings wrath, but where there is no law there is no transgression.", "refTag": "Romans 4:13-15" },
@@ -423,80 +544,64 @@
         "December 31": { "quote": "May the Lord fulfill all your petitions!", "refTag": "Psalm 20:5" }
 
     };
-    console.log(a);
-    var bCode = moment().format("MMMM D");
-    $("#CurrentDate").html(moment().format("MMMM D")),
-    $("#CurrentVerse").html(a[bCode].quote),
-    $("#CurrentVerseRefTag").html(a[bCode].refTag),
-    $("#CurrentVerse2").html(a[bCode].quote2),
-    $("#CurrentVerseRefTag2").html(a[bCode].refTag2),
-    $("#CurrentTime").html(moment().format("MMMM Do YYYY, h:mm:ss a"));
+    console.log(quotePicker);
+	
+	
+	
+	var pickedDate = moment().format("MMMM D");
+	 $("#pickedDate").html(moment().format("MMMM D")),
+    $("#quotepicker").html(quotePicker[pickedDate].quote),
+    $("#datePickerVerseRefTag").html(quotePicker[pickedDate].refTag),
+    $("#datePickerVerse2").html(quotePicker[pickedDate].quote2),
+    $("#datePickerVerseRefTag2").html(quotePicker[pickedDate].refTag2),
+    $("#datePickerTime").html(moment().format("MMMM Do YYYY, h:mm:ss a"));
     setInterval(function () {
-        $("#CurrentTime").html(moment().format("h:mm:ss a")),
-        bCode !== moment().format("MMMM D") && ($("#CurrentDate").html(moment().format("MMMM D")),
-        bCode = moment().format("MMMM D"),
-        $("#CurrentVerse").html(a[bCode].quote),
-        $("#CurrentVerseRefTag").html(a[bCode].refTag),
-        $("#CurrentVerse2").html(a[bCode].quote2),
-        $("#CurrentVerseRefTag2").html(a[bCode].refTag2))
-    }, 1000);
-})
-(function (a) {
-    a.put("www/index.html",
-        '<<div class="main"> <div class="date"> <h1 class="date"> TODAY inside code<span id="CurrentDate"></span> </h1> <h2 class="date"> <span id="CurrentTime"></span></h2> </div> <div class="script"> <!--        <h3>My Verse</h3>	--> <p class="quote"><span id="CurrentVerse"></span></p> <p class="refT"><span id="CurrentVerseRefTag"></span></p> <p class="quote2"><span id="CurrentVerse2"></span></p> <p class="refT2"><span id="CurrentVerseRefTag2"></span></p> </div> </div> </div>'),
-        a.put("www/index.html", '<div class="jumbotron"> <h1>A Lawyers Devotional</h1> <p class="lead"> </p> <p><a class="btn btn-lg btn-success" ng-href="#/">Yay <span class="glyphicon glyphicon-ok"></span></a></p> <p></p> </div>')
-});
-
-
-
-//  change background color
-/*function bgColor1() {
+        $("#datePickerTime").html(moment().format("h:mm:ss a")),
+        pickedDate !== moment().format("MMMM D") && ($("#pickedDate").html(moment().format("MMMM D")),
+        pickedDate = moment().format("MMMM D"),
+        $("#quotepicker").html(quotePicker[pickedDate].quote),
+        $("#datePickerVerseRefTag").html(quotePicker[pickedDate].refTag),
+        $("#datePickerVerse2").html(quotePicker[pickedDate].quote2),
+        $("#datePickerVerseRefTag2").html(quotePicker[pickedDate].refTag2))
+    }, 1000);	
 	
-	document.body.style.backgroundColor = "bgColor1";
-}
-function bgColor2() {
+if(checkDate) {
+	node.textContent (    $("#quotepicker").html(quotePicker[pickedDate].quote));
 	
-	document.body.style.backgroundColor = "bgColor2";
-}
-function bgColor3() {
+}	
 	
-	document.body.style.backgroundColor = "gColor3";
+/*	function checkDate(today, pickedDate() {
+    return today.getFullYear() == pickedDate.getFullYear()
+        && today.getMonth() == pickedDate.getMonth()
+        && today.getDate() == pickedDate.getDate();
 }
-*/
-
-
-$("#bgColor1").click(function() {
- $( 'div').removeClass();
- $( 'div').addClass('bgColor1');
-});
-
-$("#bgColor2").click(function() {
- $( 'div').removeClass();
- $( 'div').addClass('bgColor2');
-});
-
-$("#bgColor3").click(function() {
- $('div').removeClass();
- $('div').addClass('bgColor3');
-});
-
-
-// from YT Frontend Tips channel
-$(function() {
-  $('.navBar').click(function() {
-    $('.stick').toggleClass('trigger');
-  });
-});
-
-/*function toggleCP(){
-	var cp = document.getElementById("cp");
-	cp.style.height = window.innerHeight - 60+"px";
-	if(cp.style.right === "0px"){
-		cp.style.right = "-260px";
-	} else {
-		cp.style.right = "0px";
+	if (checkDate( new Date(userString), new Date()
+	
+	
+	if(document.getElementById('pickedDate').setHours(0,0,0,0) === today.setHours(0,0,0,0)){
+		// Date equals today's date
+		alert(pickedDate.setHours(0,0,0,0) == today.setHours(0,0,0,0));
 	}
-}
+	var c = new document.getElementById('pickedDate').addEventListener;
+	while (today === c){
+		console.log('working here');
+		return("do something");
+	}
+	
+	document.getElementById('quotepicker').onchange = function(){
+		var selem = document.getElementById('quotepicker');
+		document.getElementById('someinput').value = selem.options[selem.selectedIndex].value;
+	}
+	
+	if(Date.now()===document.getElementById("PickedDate").value {
+		
+	})
+	   
+});
 
-    for(var i = 0; i < 40; i++){ document.write("<h2>"+(i+1)+". Dummy page content ... </h2>"); }
-console.log(toggleCP);*/
+// listen for date comparison TODAY vs selectedDate from datepicker
+		
+$("#datepicker_xxx").datepicker("getDate");*/
+		
+checkDate();	
+alert('formula seems to work');

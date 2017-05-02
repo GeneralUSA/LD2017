@@ -17,17 +17,17 @@
  */
 
 angular.module('kimberlyApp')
-  .controller('CalendarCtrl', function () {
+  .controller('CalendarCtrl', function () {};
 
             // Must follow : "MMMM D", full month name, single digit for the day
-            var my_verse_database =
+/*            var my_verse_database =*/
 
         //            " December 14 " : { // This will not work, because there is extra white space in the column value.
           //              "quote" : "Unequal weights are an abomination to the Lord.",
             //            "refTag" : "Exodus 4:11"
               //      }
 
-      {
+ /*     {
       "January 1"  :   {"quote"  :   "But this is the covenant that I will make with the house of Israel after those days, declares the Lord: I will put my law within them, and I will write it on their hearts.  And I will be their God, and they shall be my people." , "refTag"  :   "Jeremiah 31:33"  },
       "January 2"  :   {"quote"  :   "For by works of the law no human being will be justified in his sight, since through the law comes knowledge of sin." , "refTag"  :   "Romans 3:20"  },
       "January 3"  :   {"quote"  :   "For the law brings wrath, but where there is no law there is no transgression." , "refTag"  :   "Romans 4:13-15"  },
@@ -417,26 +417,26 @@ angular.module('kimberlyApp')
       "December 31"  :   {"quote"  :   "May the Lord fulfill all your petitions!" , "refTag"  :   "Psalm 20:5"  }
       
       
-      };
+      };*/
       
-      console.log(my_verse_database);
+/*      console.log(my_verse_database);*/
       // Using Moment JS
       // http://momentjs.com      for date/time codes:  http://momentjs.com/docs/#/parsing/
 
-      var theCurrentDate = moment().format('MMMM D');
+/*      var theCurrentDate = moment().format('MMMM D');
       $("#CurrentDate").html(moment().format('MMMM D'));
       $("#CurrentVerse").html(my_verse_database[theCurrentDate]["quote"]);
       $("#CurrentVerseRefTag").html(my_verse_database[theCurrentDate]["refTag"]);
 
       $("#CurrentVerse2").html(my_verse_database[theCurrentDate]["quote2"]);
-      $("#CurrentVerseRefTag2").html(my_verse_database[theCurrentDate]["refTag2"]);
+      $("#CurrentVerseRefTag2").html(my_verse_database[theCurrentDate]["refTag2"]);*/
 
 
       //Initialize Time
-      $("#CurrentTime").html(moment().format('MMMM Do YYYY, h:mm:ss a'));
+/*      $("#CurrentTime").html(moment().format('MMMM Do YYYY, h:mm:ss a'));*/
 
       // Checks every second the time. If the date has changed...update the quote
-      var myTimingInterval = setInterval(function () {
+/*      var myTimingInterval = setInterval(function () {
           $("#CurrentTime").html(moment().format('h:mm:ss a'));
 
 
@@ -454,3 +454,4 @@ angular.module('kimberlyApp')
 
       }, 1000);
   });
+*/

@@ -432,9 +432,93 @@ var dailyQuote =
 	
 	
 	
-	////////
+	////  My stackoverflow work file ////
 
 $(document).ready(function() {
+  var calendar = moment().format("YYYY-MM-DD");
+
+  var dateControl = document.querySelector('input[type="date"]');
+  dateControl.addEventListener(
+    'change',
+    function() {
+      getQuote(this.value);
+    },
+    false
+  );
+
+  dateControl.value = calendar;
+  setQuote(calendar);
+
+  function getQuote(date) {
+    setQuote(date);
+  }
+
+  function setQuote(date) {
+    var bbCode = moment(date).format('MMMM D');
+    $("#selectedDate").html(bbCode);
+$(".verseText").html('');
+$(".verseRefTag").val('');	  
+	  
+    if (dailyQuote[bbCode]) {
+      $("#selectedVerse").html(dailyQuote[bbCode].quote);
+      $("#selectedVerseRefTag").val(dailyQuote[bbCode].refTag);
+      $("#selectedVerse2").html(dailyQuote[bbCode].quote2);
+      $("#selectedVerseRefTag2").val(dailyQuote[bbCode].refTag2);		
+   } 
+ else {
+      $("#selectedVerse").html('');
+      $("#selectedVerseRefTag").val('Out of month\'s date range.');
+    }
+  }
+});
+
+	////  end My stackoverflow work file ////
+
+
+
+///  original from http://stackoverflow.com/questions/43508185/javascript-using-datepicker-month-date-only-no-year-moment-js-and-json-to/43508842?noredirect=1#comment74140320_43508842
+
+/*
+$(document).ready(function() {
+  var calendar = moment().format("YYYY-MM-DD");
+
+  var dateControl = document.querySelector('input[type="date"]');
+  dateControl.addEventListener(
+    'change',
+    function() {
+      getQuote(this.value);
+    },
+    false
+  );
+
+  dateControl.value = calendar;
+  setQuote(calendar);
+
+  function getQuote(date) {
+    setQuote(date);
+  }
+
+  function setQuote(date) {
+    var bCode = moment(date).format('MMMM D');
+    $("#selectedDate").html(bCode);
+    if (dailyQuote[bCode]) {
+      $("#selectedVerse").html(dailyQuote[bCode].quote);
+      $("#selectedVerseRefTag").val(dailyQuote[bCode].refTag);
+    } else {
+      $("#selectedVerse").html('');
+      $("#selectedVerseRefTag").val('No quote for today.');
+    }
+  }
+
+});
+*/
+
+//// end original from http://stackoverflow.com/questions/43508185/
+
+	///////////
+
+
+/*$(document).ready(function() {
   var calendar = moment().format("YYYY-MM-DD");
 //  var calendar = moment().format("MM-DD-YYYY");
 //  var calendar = moment().format("MMMM DD");	
@@ -475,5 +559,34 @@ $(document).ready(function() {
 		bbCode = moment().format("MMMM D") })	;
 
 });
-
+*/
 // end of datePicker Event -- kh
+
+
+///////  http://stackoverflow.com/questions/22593759/how-do-i-clear-inner-html/22593831#22593831  ///////////
+
+/*
+(function(){
+        var header = document.getElementById("the-header");
+        header.onmouseover = function() {
+          go('The dog is in its shed');
+        };
+        header.onmouseout = clear;
+
+        function go(what) {
+          document.getElementById("goy").innerHTML = what;
+        }
+        function clear() {
+          document.getElementById("goy").innerHTML = "";
+        }
+      })();
+*/
+
+
+/*
+document.getElementById("calendar").addEventListener("select", clearQuote);
+
+function clearQuote(){
+        document.getElementById("selectedVerse2").innerHTML = "";
+	}
+*/ 
