@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget 
-	xmlns="http://www.w3.org/ns/widgets" 
-	xmlns:gap="http://phonegap.com/ns/1.0"  
-	 
 	id="com.lawyersdevotional.iphoneapp" 
-	version="1.0.0" >
+	version="1.0.0"
+	xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:gap="http://phonegap.com/ns/1.0" >
 <name>LawyersDevotional</name>
 <description>A Lawyer's Devotional -- Daily Scripture for the Legal Professional </description>
-<author href="http://www.lawyersdevotional.com/"	email="" >K. Hanley</author>
+<author href="http://www.lawyersdevotional.com/"	email="4saleitems@outlook.com" >K. H.</author>
 
 <preference name="permissions" value="none"  />
 <preference name="phonegap-version" value="cli-6.5.0"  />
