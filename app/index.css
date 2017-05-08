@@ -1,10 +1,7 @@
 /*  TO DO LIST 
-*	need to fix buttons
+
 *	create Constitution page & get all pages looking like main page
 *	run another app package test
-*	apple dev license	DONE
-*	try out the cool menu that moves to arrow ... code is under text file name
-*	" cssTest_workingCode_junkComments "  inside the GV shared folder for apps
 
 */
 
@@ -12,7 +9,7 @@
 html, body, div.main {
 	background-color: #45617d;	   /*  #788897 */
 	width: 100%;
-	margin: 0%;
+	margin: -5% 0%;
 	padding: 0%;
 	border: 0%;
 	color: #ffffff;
@@ -23,7 +20,7 @@ html, body, div.main {
 /* app meat links to date & scripture*/
 
 
-/*  Menu & change Buttons  */
+/*  ///  Menu ////  */
 
 #menu {
 	
@@ -32,11 +29,10 @@ html, body, div.main {
 	position: fixed;
 	margin: 0px;
 	padding: 0px;
-	/*background-color: green;*/
-
 }
 
-/*  A Lawyer's Dev text image  */
+
+		/*  A Lawyer's Dev text image  */
 img.headerImg{
 /*	display: block;
 	background: url(images/SplashScreen620x300px201_crop.png);
@@ -45,14 +41,14 @@ img.headerImg{
 	max-height: 30%;*/
 	width: 100%;
 	/*position: fixed;*/
-	margin-top: 0%;				/* this moves very top image down & linked */  
+	margin-top: 0%;		/* this moves very top image down & linked */  
 	padding: 0px ;					/*  somehow to container */
 	vertical-align: top;
 }
 
-/* end Header Image section */
-.menu {
-	/*position: fixed;*/
+	/* end Header Image section */
+.menu, .table {
+	position: fixed;
 	width: 100%;
 	margin: 0% ;
 	padding: 0% ;
@@ -80,21 +76,22 @@ img.headerImg{
 
 table {
 	font-size: small;	
-	/*background-color: royalblue;*/
 	column-span: all;
 	width: 100%;
 	height: 10%;
-	margin-top: 20px;
-	padding: 2px;
+/*	margin-top: 20px;
+	padding: 2px;*/
 	border: thick;
 	background-color: transparent;
+	/*background-color: royalblue;*/
 }
 
 th{
-	padding: 9% 0% 0% 0%;
-	font-weight: 700;
-	font-size: xx-large;
-	color: #0D2032;			/*  #0D2032  dark blue */
+	padding: 5% 0% 0% 0%;
+	font-weight: 400;
+	font-size: x-large;
+	/*color: #0D2032;			  #0D2032  dark blue */
+	text-shadow: 1px 1px 2px black;
 }
 
 tr {
@@ -140,50 +137,14 @@ a:hover{
 	color: #94879E;
 }
 
-/*  END OF HEADER MENU section */
-/*#spacer {
-	width: 15%;
-	background-color: aqua;
-}
-*/
-/*#buttons.buttons {
-	position: relative;
-	top: -3px;
-	right: 30px;
-	border: 1px solid;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-	margin-top: 0px;
-	background-color: rebeccapurple;
-}
-.bgColor1 {
-    background-color: #94A1AD;
+/*  /// END  Menu ////  */
 
-}
-.bgColor2 {
-    background-color: #45617d;
-}
-.bgColor3 {
-    background-color: #242629;	  
-	}*/
-
-/*td.share {
-	border-image-slice: url(images/[000153].png);	
-	
-}  */
-
-/*  end --Menu & color rounds  */
-
-/*  END OF OLD MENU BUTTON sections */
-
-
-/*  The job section */
+	/*  The job section */
 
 /* #today same as div.container section and same as div.main*/
-.container { 
-	margin: 0% 2% 0% 2%;
-	padding: 0% 1% 0% 1% ;
+div.container { 
+	margin: 10% 4% 0% 2%;
+	padding: 0% 5% 0% 1% ;
 	text-align: justify;
 	border: ridge; 
 	border-color: transparent;		/* #45617d */
@@ -195,6 +156,7 @@ a:hover{
 
 #CurrentDate {
 	font-weight: 900;
+	text-shadow: 1px 1px 2px black;
 	/*	color: blueviolet;*/  
 	}
 
@@ -206,15 +168,59 @@ h1.date {
 	margin-top: 30%;
 }
 
-h1, h2 {
+.pick-date {
+	font-weight: 900;
+	text-shadow: 1px 1px 2px black;
+/*		color: blueviolet; */ 
+	margin-top: 45%;
+	}
+
+h1, h2, h3 {
 	padding-left: 5%;
 	margin-top: 7%;
 	margin-left: 2%;
+
 }
 
-h2 {
+h2, h2#constitution {
 	font-size: 125%;
-	text-align: left
+	text-align: left;
+	/*color: green;*/
+}
+
+#xtras {
+	margin: 25% 0%;
+	padding: 20% 0%;
+	text-shadow: 1px 1px 2px black;		
+	/*color: red;*/
+}
+
+.commands>h2 {
+	font-size: 125%;
+	text-align: left;
+	color: #D0D09F;	
+	text-shadow: 1px 1px 2px black;	
+}
+.commands>h3 {
+	color: #D0D09F;
+	font-size: 120%;
+	padding: 0% 0% 0% 15%;
+	margin: 5px 0px 5px 0px;
+	text-shadow: 1px 1px 2px black;	
+	line-height: 10px;
+}
+
+.commands>p {
+	color: #ECECBE;
+	font-size: 100%;
+	line-height: 17px;	
+	margin: 5px 0px 15px 0px;	
+}
+
+p.genRef {
+	margin: 0% 4% 0% 25%;
+	font-size: small;
+	
 }
 
 p {
@@ -223,27 +229,29 @@ p {
 	font-size: 125%;
 }
 
-p.paraTop{
+/*p.paraTop{
 	padding-top: 70px;
 	padding-bottom: 0%;
-}
+}*/
 
-p.quote , p.quote2 {
+.quote , .quote2 {
 	font-size: 130%;
 /*	font-weight: 700;  */
+	margin: 0% 3% 0% 0%;
+/*	color: red;*/
 	}
 
 
-p.refT , p.refT2  {
+.refT , .refT2  {
 	padding-right: 10%;
 	font-size: 125%;
 	font-style: italic;
 	text-align: right;
 }
 
-p.refT2 {
+.refT2 {
 
-	color: aqua;
+	color: palevioletred;
 }
 
 /* end the job section */
@@ -251,11 +259,12 @@ p.refT2 {
 
 #footer, footer.footer {
 	/*display: block;*/
-	font-size: xx-small;
+	font-size: small;
+	font-style: italic;
+	color: white;
 	text-align: center;
 	vertical-align: text-bottom;
 	background-color: #1E3B56;	          /*#1E3B56*/
-	font-style: italic;
 	margin: 0px;
 	padding: 2%;
 	height: 3em;
@@ -266,20 +275,104 @@ p.refT2 {
 }
 
 
-/*  ABOUT section */
-table.about {
-	padding: 0%,2%,0%,2% ;
+/* /// CALENDAR section */
 
+/* ////////////   */
+
+.calendarPicker {
+	padding: 35% 0% 0% 0%;
+	margin: 0% 0% 0% 5%;
+	font-size: 150%;
 }
 
-#about {
+#calendar {
+	display: inline-block;
+	width: 175px;
+}
+
+.pick-date>h1, p,
+.pick-date>input {
+/*	display: inline-block;*/
+
+    padding: 0% 0% 0% 10%;
+    margin: 0%;	
+}
+
+.pick-date>input[type="date"]
+ {
+	align-content: space-around;
+	color: #788897;								/*#1E3B56*/
+	background-color: #1E3B56;				/*#788897   #0D2032*/
+	font-weight: 900;
+
+    width: 100%;
+/*    padding: 7px 10px;
+    margin: 18px 0;*/
+
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+
+
+/*.pick-date>h2,h3 {
+	padding: 0% 0% 0% 0%;
+	margin: 0% 0% 0% 0%;
+}*/
+
+
+#datePickedQuote>input {
+/*	color: palevioletred;*/
+	display: inline-block;
+	width: 80%;
+    padding: 0% 0% 0% 10%;
+    margin: 0%;		
+}
+
+.verseText {
+
+	font-size: 100%;
+	
+}
+
+.verseRefTag {
+	text-align: right;
+	background-color: transparent;
+	margin-right: auto;
+	border: hidden;
+	color: white;
+	font-size: 80%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";	
+}
+
+
+/* /// end CALENDAR section */
+
+
+
+
+
+
+
+
+/*  ABOUT section */
+
+h1.about {
+	margin: 30% 0% 0% 0%;
+	padding: 20% 0% 0% 4%;
+	text-shadow: 1px 1px 2px black;	
+	/*color:red;*/
+}
+
+#about {				/*  same as table#about */
 	color: white; 
 	text-align: left;
 	font-size: medium;
 	vertical-align: top;
-	margin: 15% 0% 0% 0%;
-	padding: 15% 0% 0% 0%;
-
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 4%;
+/*	color:aqua;*/
 }
 
 td.imgTable {
@@ -297,14 +390,70 @@ a.aboutLink {
 	/*background-color: brown;*/
 }
 
+form {
+	margin: 0px 2px 0px 20px;
+	padding: 0em 0em 0em 1em;
+	width: 100%;
+/*	border: 1px solid #CCC;
+	border-radius: 1em;*/
+}
+
+form div + div {
+	margin-top: 1em;
+/*	background-color: pink;*/
+}
 
 form.feedback {
-	margin: 0% 0% 0% -5%;
+	margin: 0% 0% 0% -7%;
 	/*color: aqua;*/
 	}
+
 label {
 	/*color: red;*/
 	font-size: medium;
+	display: inline-block;
+	width: 90px;
+	text-align: inherit;
+}
+
+input, textarea {
+	font: 1em sans-serif;
+	width: 95%;
+	box-sizing: border-box;
+	border: 1px solid #998;
+	border-radius: 1em;
+}
+
+input:focus, textarea:focus {
+	/* to highlight active elements*/
+	border-color: #000;
+}
+
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;	
+}
+
+.button {
+	padding-left: 15px;
+	font-size: small;
+	margin-left: .75em;
+	width: 85%;
+}
+
+button {
+	
+	margin-left: .5em;
+	background-color: aqua;
+}
+
+p.message {
+/*	color: red;*/
+	font-size: 100%;
 }
 
 /*  END OF ABOUT section */
@@ -316,11 +465,11 @@ label {
     display:none;
 }*/
 
-#dailyquote {
+/*#dailyquote {
 	color: bisque;
 	font-size: small;
 	
-}
+}*/
 
 
 
@@ -336,15 +485,35 @@ table.share {
 }
 
 
-
+	/*  RSS FEED */
 
 .feed{
-	font-size: medium;
+	font-size: small;
 }
+
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+#feedControl {
+margin-top : 10px;
+margin-left: auto;
+margin-right: auto;
+width : 440px;
+font-size: 12px;
+color: #9CADD0;
+}
+
+#waves {
+	margin: 0% 10% 0% 10%;
+	width: 97%;
+	
+}
+	/* end RSS FEED */
+
+
 #constitution {
 	font-size: small;
 	font-weight: normal;
-	background-color: #032545;
+	/*background-color: #032545;*/
 	padding: 0% 0px 0% 0%;
 	margin: 0px 0px 0px 0px;
 
@@ -356,38 +525,5 @@ table.share {
 
 }
 
-
-/* ////////////   */
-
-
-
-.pick-date>h1,
-.pick-date>input {
-  display: inline-block;
-}
-.pick-date>input[type="date"]
- {
-	align-content: space-around;
-	color: aqua;
-/*	padding: 0% 0% 0% 20%;
-	margin: 0% 0% 0% 20%;*/
-
-    width: 100%;
-    padding: 112px 20px;
-    margin: 18px 0;
-
-    border: 1px solid #ccc;
-    border-radius: 40px;
-    box-sizing: border-box;
-}
-
-.pick-date>h2,h3 {
-	padding: 0% 0% 0% 7%;
-	margin: 0% 0% 0% 0%;
-}
-
-.pick-date>refT,refT2 {
-	text-align: right;
-}
 
 /* end unnecessary additions */

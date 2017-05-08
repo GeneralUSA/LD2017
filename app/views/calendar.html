@@ -43,33 +43,34 @@
     
    <!-- app meat -->
 <div id="main">
-	<div id="menu">
+	<div class="menu">
 		<div class="img"> 
 		  <img class="headerImg" src="../images/SplashScreen620x300px201_crop.png" alt="A Lawyer's Devotional" title="A daily devotional for the legal professional"> 
 		</div>
-		<table class="menu">
+		<table class="table">
 			<tr class="td2">
-				<td class="td2"><a href="../app/index.html"><img class="navImg" src="../images/LDlogoBW.png" alt="Home page"/><br />Home</a>&nbsp;</td>
-				<td class="td2"><a href="views/calendar.html"><img class="navImg" src="../images/collection.png"  width="50px" height="10px" alt="Scripture Collection"/><br /> Calendar</a>&nbsp;</td>
-				<td class="td2"><a href="views/resources.html"><img class="navImg" src="../images/wmrResources4_32x32.png"  width="50px" height="10px" alt="Miscellaneous Resources"/><br /> Extras</a>&nbsp;</td>
-				<td class="td2"><a href="views/about.html"><img class="navImg" src="../images/wmrAbout3.png" alt="About page"/><br />About</a>&nbsp;</td>
+				<td class="td2"><a href="../index.html"><img class="navImg" src="../images/LDlogoBW.png" alt="Home page"/><br />Home</a>&nbsp;</td>
+				<td class="td2"><a href="../views/calendar.html"><img class="navImg" src="../images/collection.png"  width="50px" height="10px" alt="Scripture Collection"/><br /> Calendar</a>&nbsp;</td>
+				<td class="td2"><a href="../views/resources.html"><img class="navImg" src="../images/wmrResources4_32x32.png"  width="50px" height="10px" alt="Miscellaneous Resources"/><br /> Extras</a>&nbsp;</td>
+				<td class="td2"><a href="../views/about.html"><img class="navImg" src="../images/wmrAbout3.png" alt="About page"/><br />About</a>&nbsp;</td>
 			</tr>
 		</table>
 	</div>
 
-<div class="calendarPicker">
-  <div class="pick-date">
-	<h2 class="pick-date">Pick a Date: <input type="date" id="calendar" name="calendar" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"></h2>
-	</div>
-  <div id="datePickedQuote">
-	<p class="verseText"> Daily scripture for <span id="selectedDate"></span>:</p> 
-	<p id="selectedVerse" class="verseText" value="Text area"></p>
-	<input type="text" id="selectedVerseRefTag" class="verseRefTag" value=""><br><br>
-	<p  id="selectedVerse2" class="verseText" value="Text area"></p>
-	<input type="text" id="selectedVerseRefTag2" class="verseRefTag" value=""><br><br>
-  </div>
-</div>	
- 
+<div class="container">
+	<div id="calendarPicker" >
+	  <div class="pick-date">
+		<h2 class="pick-date">Pick a Date: <input type="date" id="calendar" name="calendar" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"></h2>
+		</div>
+	  <div id="datePickedQuote">
+		<p class="verseText"> Daily scripture for <span id="selectedDate"></span>:</p> 
+		<p id="selectedVerse" class="verseText" value="Text area"></p>
+		<input type="text" id="selectedVerseRefTag" class="verseRefTag" value=""><br><br>
+		<p  id="selectedVerse2" class="verseText" value="Text area"></p>
+		<input type="text" id="selectedVerseRefTag2" class="verseRefTag" value=""><br><br>
+	  </div>
+	</div>	
+</div>
 <div><footer class="footer"><p>Published by Sylvan</p></footer></div>
 
 </div> 

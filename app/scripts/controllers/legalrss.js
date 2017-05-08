@@ -24,3 +24,14 @@ angular.module('kimberlyApp')
       'Karma'
     ];
   });
+
+
+/* http://www.developerdrive.com/2012/03/a-simple-way-to-add-free-news-content-to-your-website/ */
+function load() {
+var feed ="http://www.loc.gov/rss/pao/news.xml";
+		// "http://feeds.bbci.co.uk/news/world/rss.xml";
+new GFdynamicFeedControl(feed, "feedControl");
+
+}
+google.load("feeds", "1");
+google.setOnLoadCallback(load);

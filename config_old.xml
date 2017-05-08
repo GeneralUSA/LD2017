@@ -9,21 +9,21 @@
 <description>A Lawyer's Devotional -- Daily Scripture for the Legal Professional </description>
 <author href="http://www.lawyersdevotional.com/"	email="4saleitems@outlook.com" >K. H.</author>
 
-<!--<feature name="http://api.phonegap.com/1.0/notification" />
+<feature name="http://api.phonegap.com/1.0/notification" />
 <preference name="permissions" value="none"  />
 <preference name="phonegap-version" value="cli-6.5.0"  />
 <preference name="orientation" value="default"  />
 <preference name="target-device" value="universal"  />
 <preference name="fullscreen" value="true"  />
-<preference name="webviewbounce" value="true"  />-->
-	<!-- lynda -->
-<!--<preference name="DisallowOverscroll" value="false" />
+<preference name="webviewbounce" value="true"  />
+<!-- lynda -->
+<preference name="DisallowOverscroll" value="false" />
 <preference name="disallowOverscroll" value="false" />
 <preference name="deployment-target" value="7.0" />
 <preference name="StatusBarOverlaysWebView" value="false" />
-<preference name="StatusBarStyle" value="default" />-->
-	<!-- end lynda -->
-<!--<preference name="prerendered-icon" value="true"  />
+<preference name="StatusBarStyle" value="default" />
+<!-- end lynda -->
+<preference name="prerendered-icon" value="true"  />
 <preference name="stay-in-webview" value="false"  />
 <preference name="ios-statusbarstyle" value="black-opaque"  />
 <preference name="detect-data-types" value="true"  />
@@ -32,7 +32,7 @@
 <preference name="auto-hide-splash-screen" value="true"  />
 <preference name="disable-cursor" value="false"  />
 <preference name="android-minSdkVersion" value="21"  />
-<preference name="android-installLocation" value="auto"  />-->
+<preference name="android-installLocation" value="auto"  />
 
 
 <!--<gap:plugin name="org.apache.cordova.battery-status" />
