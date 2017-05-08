@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calendar Scripture Picker</title>
+    <meta name="A Lawyer's Devotional" content="Daily scriptures and other content created with the lawyer in mind.">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+<!--    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+-->    
+<!--    <link rel="stylesheet" href="../styles/main.css">
+-->    <link rel="stylesheet" type="text/css" href="../index.css">    
+
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+<!--    <link rel="stylesheet" href="../styles/main.css">-->
+    <link rel="stylesheet" type="text/css" href="/app/index.css">
+<!--    <link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+    <link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">-->
+<!--    <link href="../jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">    
+-->    
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+ <!-- endbuild -->
+  <script src="../jQueryAssets/jquery-1.11.1.min.js"></script>
+  <script src="../jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+
+
+  </head>
+  <body ng-app="kimberlyApp"  link="#2F4B8C">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    
+   <!-- app meat -->
+<div id="main">
+	<div class="menu">
+		<div class="img"> 
+		  <img class="headerImg" src="../images/SplashScreen620x300px201_crop.png" alt="A Lawyer's Devotional" title="A daily devotional for the legal professional"> 
+		</div>
+		<table class="table">
+			<tr class="td2">
+				<td class="td2"><a href="../index.html"><img class="navImg" src="../images/LDlogoBW.png" alt="Home page"/><br />Home</a>&nbsp;</td>
+				<td class="td2"><a href="../views/calendar.html"><img class="navImg" src="../images/collection.png"  width="50px" height="10px" alt="Scripture Collection"/><br /> Calendar</a>&nbsp;</td>
+				<td class="td2"><a href="../views/resources.html"><img class="navImg" src="../images/wmrResources4_32x32.png"  width="50px" height="10px" alt="Miscellaneous Resources"/><br /> Extras</a>&nbsp;</td>
+				<td class="td2"><a href="../views/about.html"><img class="navImg" src="../images/wmrAbout3.png" alt="About page"/><br />About</a>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+
+<div class="container">
+	<div id="calendarPicker" >
+	  <div class="pick-date">
+		<h2 class="pick-date">Pick a Date: <input type="date" id="calendar" name="calendar" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"></h2>
+		</div>
+	  <div id="datePickedQuote">
+		<p class="verseText"> Daily scripture for <span id="selectedDate"></span>:</p> 
+		<p id="selectedVerse" class="verseText" value="Text area"></p>
+		<input type="text" id="selectedVerseRefTag" class="verseRefTag" value=""><br><br>
+		<p  id="selectedVerse2" class="verseText" value="Text area"></p>
+		<input type="text" id="selectedVerseRefTag2" class="verseRefTag" value=""><br><br>
+	  </div>
+	</div>	
+</div>
+<div><footer class="footer"><p>Published by Sylvan</p></footer></div>
+
+</div> 
+
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="../scripts/app.js"></script>
+<script src="../scripts/controllers/main.js"></script>
+<script src="../scripts/controllers/about.js"></script>
+<script src="../scripts/controllers/calendar.js"></script>
+<!-- endbuild -->
+
+<!-- kh added scripts -->
+<script src="../scripts/controllers/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="../scripts/controllers/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../scripts/controllers/moment.min.js"></script>
+<script src="../scripts/controllers/ld_script.js"></script>
+<script src="../scripts/controllers/extras.js"></script> 
+<script type="text/javascript" src="phonegap.js"></script>     
+<!-- 2nd set of kh scripts -->
+<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="moment.min.js"></script>
+<script src="../scripts/controllers/calendar2.js"></script>
+<!-- end kh added scripts -->
+
+</body>
+</html>
