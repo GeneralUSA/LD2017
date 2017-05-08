@@ -435,7 +435,8 @@ var dailyQuote =
 	////  My stackoverflow work file ////
 
 $(document).ready(function() {
-  var calendar = moment().format("YYYY-MM-DD");
+//  var calendar = moment().format("YYYY-MM-DD");
+  var calendar = moment().format("MM-DD-YYYY");	
 
   var dateControl = document.querySelector('input[type="date"]');
   dateControl.addEventListener(
