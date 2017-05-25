@@ -160,12 +160,6 @@ h1.date {
 	margin-top: 30%;
 }
 
-.pick-date {
-	font-weight: 900;
-	text-shadow: 1px 1px 2px black;
-/*		color: blueviolet; */ 
-	margin-top: 45%;
-	}
 
 h1, h2, h3 {
 	padding-left: 5%;
@@ -173,7 +167,6 @@ h1, h2, h3 {
 	margin-left: 2%;
 
 }
-
 
 
 p {
@@ -212,7 +205,7 @@ p {
 
 #footer, footer.footer {
 	/*display: block;*/
-	font-size: small;
+	font-size: x-small;
 	font-style: italic;
 	color: white;
 	text-align: center;
@@ -221,10 +214,9 @@ p {
 	margin: 0px;
 	padding: 2.5%;
 	height: 3em;
-	position: fixed;		/* need both position:fixed & bottom to push footer */
+	position: fixed;		/* need both position:fixed & bottom to 							push footer */
 	bottom: 0;				/* to the bottom of the page */
-	width: 96%;				/* need width too, but 100% on DW makes a horizontal scroll */
-	
+	width: 96%;				/* need width too, but 100% on DW makes a 							  horizontal scroll */
 }
 
 
@@ -241,7 +233,17 @@ p {
 #calendar {
 	display: inline-block;
 	width: 175px;
+	font-size: medium;
+	text-align: center;
+	padding: 0% 0% 0% 0%;
 }
+
+.pick-date {
+	font-weight: 900;
+	text-shadow: 1px 1px 2px black;
+/*		color: blueviolet; */ 
+	margin-top: 42%;
+	}
 
 .pick-date>h1, p,
 .pick-date>input {
@@ -303,17 +305,11 @@ p {
 /* /// end CALENDAR section */
 
 
-
-
-
-
-
-
 /*  ABOUT section */
 
 h1.about {
 	margin: 25% 0% 0% 0%;
-	padding: 17% 0% 0% 4%;
+	padding: 20% 0% 0% 4%;
 	text-shadow: 1px 1px 2px black;	
 	/*color:red;*/
 }
@@ -375,6 +371,7 @@ input, textarea {
 	box-sizing: border-box;
 	border: 1px solid #998;
 	border-radius: 1em;
+	padding-left: 7px;
 }
 
 input:focus, textarea:focus {
@@ -388,7 +385,7 @@ textarea {
   vertical-align: top;
 
   /* To give enough room to type some text */
-  height: 5em;	
+  height: 7em;	
 }
 
 .button {
@@ -409,10 +406,13 @@ p.message {
 	font-size: 100%;
 }
 
+textarea {
+
+}
 /*  END OF ABOUT section */
 
 
-/*  unnecessary additons */
+/*  ///// unnecessary additons */
 
 /*.ui-datepicker-year{
     display:none;
@@ -437,14 +437,64 @@ table.share {
 	vertical-align: bottom;
 }
 
+/*	/// EXTRAS / RESOURCES section ///*/
+#xtras {
+/*	margin: 25% 0%;
+	padding: 20% 0%;*/
+/*	text-shadow: 1px 1px 2px black;	*/	
+	/*color: red;*/
+	
+	margin: 25% 0% 0% 0%;
+	padding: 15% 0% 15% 0%;	
+}
 
-	/*  RSS FEED */
+#xtras>h1, h2 {
+	text-shadow: none;	
+/*	color: pink;*/
+	text-shadow: 1px 1px 2px black;		
+}
+
+
+/*	/// 10 commandments ///*/
+.commands>h2 {
+	font-size: 125%;
+	text-align: left;
+	color: #D0D09F;	
+/*	text-shadow: 1px 1px 2px black;	*/
+}
+.commands>h3 {
+	color: #D0D09F;
+	font-size: 120%;
+	padding: 0% 0% 0% 15%;
+	margin: 5px 0px 5px 0px;
+	text-shadow: 1px 1px 2px black;	
+	line-height: 10px;
+}
+
+.commands>p {
+	color: #ECECBE;
+	font-size: 100%;
+	line-height: 17px;	
+	margin: 5px 0px 15px 0px;
+	text-shadow: none;	
+}
+
+p.genRef {
+	margin: 0% 4% 0% 25%;
+	font-size: small;
+	
+}
+
+/*  ////// RSS FEED /////// */
+
+/*
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+*/
 
 .feed{
 	font-size: small;
 }
 
-/*@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");*/
 
 #feedControl {
 margin-top : 10px;
@@ -456,7 +506,7 @@ color: #9CADD0;
 }
 
 #waves {
-	margin: 0% 10% 0% 10%;
+	margin: 3% 10% 0% 10%;
 	width: 97%;
 	
 }
@@ -493,46 +543,6 @@ h2, h2#constitution {
 	
 }
 
-#xtras {
-	margin: 25% 0%;
-	padding: 20% 0%;
-/*	text-shadow: 1px 1px 2px black;	*/	
-	/*color: red;*/
-}
 
-#xtras>h1, h2 {
-	text-shadow: none;	
-/*	color: pink;*/
-	text-shadow: 1px 1px 2px black;		
-}
-
-.commands>h2 {
-	font-size: 125%;
-	text-align: left;
-	color: #D0D09F;	
-/*	text-shadow: 1px 1px 2px black;	*/
-}
-.commands>h3 {
-	color: #D0D09F;
-	font-size: 120%;
-	padding: 0% 0% 0% 15%;
-	margin: 5px 0px 5px 0px;
-	text-shadow: 1px 1px 2px black;	
-	line-height: 10px;
-}
-
-.commands>p {
-	color: #ECECBE;
-	font-size: 100%;
-	line-height: 17px;	
-	margin: 5px 0px 15px 0px;
-	text-shadow: none;	
-}
-
-p.genRef {
-	margin: 0% 4% 0% 25%;
-	font-size: small;
-	
-}
 
 /* end unnecessary additions */
