@@ -57,13 +57,14 @@
 
 <!--  PLUGINS 	-->
 <!--  resource: https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
-<!--<gap:plugin name="org.apache.cordova.battery-status" />
+<!--
+<gap:plugin name="org.apache.cordova.battery-status" />
 <gap:plugin name="org.apache.cordova.console" />
 <gap:plugin name="org.apache.cordova.device" />
 <gap:plugin name="org.apache.cordova.device-motion" />
-<gap:plugin name="org.apache.cordova.device-orientation" />-->
+<gap:plugin name="org.apache.cordova.device-orientation" />
 <gap:plugin name="org.apache.cordova.splashscreen" />
-
+-->
 
 
 <!--  // from CP files ///   -->
