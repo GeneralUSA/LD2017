@@ -20,59 +20,25 @@
 
 <preference name="phonegap-version" value="cli-6.5.0"  />
 
-<!--
-<feature name="http://api.phonegap.com/1.0/notification" />
-<preference name="permissions" value="none"  />
 
-<preference name="orientation" value="default"  />
-<preference name="target-device" value="universal"  />
-<preference name="fullscreen" value="true"  />
--->
 <preference name="webviewbounce" value="false"  />  <!-- it set initially to "TRUE"
 									S. Northcott said set to "FALSE" // an iOS preference -->
 
-	<!-- lynda -->
-<!--<preference name="DisallowOverscroll" value="false" />
-<preference name="disallowOverscroll" value="false" />
-<preference name="deployment-target" value="7.0" />
--->
-<preference name="StatusBarOverlaysWebView" value="false" /> <!-- S. Northcott // an iOS preference // 
-											if not set to "FALSE", statusbar will continue to display-->
+
+<preference name="StatusBarOverlaysWebView" value="false" /> <!-- S. Northcott // an iOS preference // if not set to "FALSE", statusbar will continue to display-->
 <preference name="StatusBarStyle" value="default" />	<!-- S. Northcott // an iOS preference -->
 
-<!-- end lynda -->
-<!--<preference name="prerendered-icon" value="true"  />
-<preference name="stay-in-webview" value="false"  />
-<preference name="ios-statusbarstyle" value="black-opaque"  />
-<preference name="detect-data-types" value="true"  />
-<preference name="exit-on-suspend" value="false"  />
-<preference name="show-splash-screen-spinner" value="true"  />
-<preference name="auto-hide-splash-screen" value="true"  />
-<preference name="disable-cursor" value="false"  />
-<preference name="android-minSdkVersion" value="21"  />
-<preference name="android-installLocation" value="auto"  />-->
+
 <preference name="SplashScreen" value="screen" />
 "<preference name="AndroidPersistentFileLocation" value="Compatibility" />"
 
 
 <!--  PLUGINS 	-->
-<!--  resource: https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
-<!--
-<gap:plugin name="org.apache.cordova.battery-status" />
-<gap:plugin name="org.apache.cordova.console" />
-<gap:plugin name="org.apache.cordova.device" />
-<gap:plugin name="org.apache.cordova.device-motion" />
-<gap:plugin name="org.apache.cordova.device-orientation" />
-<gap:plugin name="org.apache.cordova.splashscreen" />
--->
-
 
 <!--  // from CP files ///   -->
     <content src="index.html" />
-    <plugin name="cordova-plugin-whitelist" spec="1" source="npm"/>	 <!-- S Northcoftt lesson 
-   																the add on info source npm from  -->
-    <gap:plugin name="cordova-plugin-statusbar" source="npm"/>   <!-- for cordova status bar
-    																	S Northcoftt lesson -->
+    <plugin name="cordova-plugin-whitelist" spec="1" source="npm"/>	 <!-- S Northcoftt lesson the add on info source npm from  -->
+    <gap:plugin name="cordova-plugin-statusbar" source="npm"/>   <!-- for cordova status bar	S Northcoftt lesson -->
     
 <!--  Whitelists  -->
     <access origin="*" />
@@ -88,10 +54,7 @@
     <allow-intent href="http://feed.surfing-waves.com/js/rss-feed.js" />    
     <allow-intent href="http://kimberlytopia.com/test_pages_html/demo/LDproject/contactus.php" />            
     <allow-intent href="geo:*" />   
-	<!-- 
-        <allow-intent href="tel:*" />
-        <allow-intent href="sms:*" />
-	-->
+
 
     <allow-intent href="mailto:*" />
 
