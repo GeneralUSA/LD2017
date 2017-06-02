@@ -4,8 +4,7 @@
 	xmlns="http://www.w3.org/ns/widgets" 
 	xmlns:gap="http://phonegap.com/ns/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android" 
-	versionCode = "2"
-	version = "1.1.2">
+	versionCode = "2"   version = "1.1.3">
 <name>Lawyers Devotional: new build</name>
 <description>test app : A Lawyer's Devotional -- Daily Scripture for the Legal Professional </description>
 	<author href="http://www.lawyersdevotional.com/"	email="4saleitems@outlook.com" >
@@ -14,34 +13,129 @@
     <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
         Chris Phyffer
     </author>
+
+<!--  // from CP files ///   -->
+    <content src="index.html" />        
     
+ <!--  FEATURE NOTIFICATIONS 
+ <feature name="http://api.phonegap.com/1.0/device" />
+<feature name="http://api.phonegap.com/1.0/battery"/>
+<feature name="http://api.phonegap.com/1.0/camera"/>
+<feature name="http://api.phonegap.com/1.0/contacts"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+<feature name="http://api.phonegap.com/1.0/media"/>
+<feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/1.0/notification" />
+
+FROM       http://www.developer.com/ws/getting-started-building-with-adobe-phonegap.html
+-->   
     
+          
 <!-- PREFERENCES -->    
 
 <preference name="phonegap-version" value="cli-6.5.0"  />
 
+<!--  
+<preference name="permissions" value="none"  />
 
-<preference name="webviewbounce" value="false"  />  <!-- it set initially to "TRUE"
-									S. Northcott said set to "FALSE" // an iOS preference -->
+<preference name="orientation" value="default"  />
+<preference name="target-device" value="universal"  />
+<preference name="fullscreen" value="true"  />
+-->
+<preference name="webviewbounce" value="true"  />  <!-- it set initially to "TRUE"
+									S. Northcott said set to "FALSE" // an iOS preference 
+									
+									for Cordova 2.6.0+ from
+							https://stackoverflow.com/questions/6193016/how-to-prevent-app-running-in-phone-gap-from-scrolling-vertically
+									-->
+<preference name="UIWebViewBounce" value="true" />	<!--  Cordova 2.3.0+  from 
+							https://stackoverflow.com/questions/6193016/how-to-prevent-app-running-in-phone-gap-from-scrolling-vertically  -->								
+
+	<!-- lynda -->
+<!--
+
+<preference name="disallowOverscroll" value="false" />
+<preference name="deployment-target" value="7.0" />
+-->
+<preference name="DisallowOverscroll" value="false" /> <!-- value="true" used to eliminate overscroll effects. 
+										Default necessary for back-compatibility
+										renamed from UIWebViewBounce to webviewbounce on PhoneGap Build
+										"true" means you don't want the interface to display any feedback when user scrolls past beginning or end of content.
+										http://devgirl.org/files/config-app/
+										-->
+<preference name="StatusBarOverlaysWebView" value="false" /> <!-- S. Northcott // an iOS preference // 
+											if not set to "FALSE", statusbar will continue to display
+											seems best to set false otherwise ios7 may present overlapping 
+											behavior, per devgirl.org -->
+<!--<preference name="StatusBarStyle" value="default" />	// S. Northcott // an iOS preference -->
+<preference name="StatusBarStyle" value="blackopaque" />  <!-- http://devgirl.org/2014/07/31/phonegap-developers-guid/ -->
+<preference name="StatusBarBackgroundColor" value="#45617d"/>
 
 
-<preference name="StatusBarOverlaysWebView" value="false" /> <!-- S. Northcott // an iOS preference // if not set to "FALSE", statusbar will continue to display-->
-<preference name="StatusBarStyle" value="default" />	<!-- S. Northcott // an iOS preference -->
-
-
+<!-- end lynda -->
+<!--
+<preference name="prerendered-icon" value="true"  />
+<preference name="stay-in-webview" value="false"  />
+<preference name="ios-statusbarstyle" value="black-opaque"  />
+<preference name="detect-data-types" value="true"  />
+<preference name="exit-on-suspend" value="false"  />
+<preference name="show-splash-screen-spinner" value="true"  />
+<preference name="auto-hide-splash-screen" value="true"  />
+<preference name="disable-cursor" value="false"  />
+<preference name="android-minSdkVersion" value="21"  />
+<preference name="android-installLocation" value="auto"  />
+-->
 <preference name="SplashScreen" value="screen" />
-"<preference name="AndroidPersistentFileLocation" value="Compatibility" />"
+<preference name="AndroidPersistentFileLocation" value="Compatibility" />
 
 
 <!--  PLUGINS 	-->
+<!--  resource: https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
+<!--
+<gap:plugin name="org.apache.cordova.battery-status" />
+<gap:plugin name="org.apache.cordova.console" />
+<gap:plugin name="org.apache.cordova.device" />
+<gap:plugin name="org.apache.cordova.device-motion" />
+<gap:plugin name="org.apache.cordova.device-orientation" />
+<gap:plugin name="org.apache.cordova.splashscreen" />
 
+/////////////
+http://wiki.nsbasic.com/Using_the_PhoneGap_API
+Depending on platform, the plugins can include:
+
+    Accelerometer
+    Camera
+    Capture
+    Compass
+    Connection
+    Contacts
+    Device
+    Events
+    File
+    Geolocation
+    Globalization
+    Media
+    Notification
+    Splashscreen
+    Storage
+    Barcode Scanner
+    ChildBrowser
+    Generic Push
+    Google Analytics
+///////////////////////    
+-->
 <!--  // from CP files ///   -->
-    <content src="index.html" />
-    <plugin name="cordova-plugin-whitelist" spec="1" source="npm"/>	 <!-- S Northcoftt lesson the add on info source npm from  -->
-    <gap:plugin name="cordova-plugin-statusbar" source="npm"/>   <!-- for cordova status bar	S Northcoftt lesson -->
+    <plugin name="cordova-plugin-whitelist" spec="1" source="npm"/>
+  							 <!-- S Northcoftt lesson the add on info source npm from  -->
+    <gap:plugin name="cordova-plugin-statusbar" source="npm"/>   <!-- for cordova status bar
+    																	S Northcoftt lesson -->
     
 <!--  Whitelists  -->
-    <access origin="*" />
+    <access origin="*" />   <!-- Best to remove!!
+    			Before moving your application to production, you should formulate a whitelist and allow access to specific network domains and subdomains.
+   		 		http://docs.phonegap.com/en/edge/guide_appdev_whitelist_index.md.html#Whitelist%20Guide
+   				-->
     <access origin="" browserOnly="true" />
     
     <allow-intent href="http://*/*" />
@@ -53,8 +147,12 @@
     <allow-intent href="http://www.loc.gov/rss/pao/news.xml" />
     <allow-intent href="http://feed.surfing-waves.com/js/rss-feed.js" />    
     <allow-intent href="http://kimberlytopia.com/test_pages_html/demo/LDproject/contactus.php" />            
-    <allow-intent href="geo:*" />   
-
+  
+	<!-- 
+      <allow-intent href="geo:*" />      
+        <allow-intent href="tel:*" />
+        <allow-intent href="sms:*" />
+	-->
 
     <allow-intent href="mailto:*" />
 
@@ -62,26 +160,27 @@
      
 <!-- ICONS & SPLASH SCREENS -->      
   	
-  	<icon src="icons/Icon-small@2x.png" />		<!-- default icon for when don't know what icon to use -->
-  	<gap:splash src="splashScrns/mdpi.png" />	<!-- default splash screen -->
+  	<icon src="images/icons/Icon-small@2x.png" />		<!-- default icon for when don't know what icon to use -->
+  	<gap:splash src="images/splashScrns/SplashScreen320x480px.png" />	<!-- default splash screen mdpi.png -->
 
    <!-- ANDROID -->
     <platform name="android">
         <allow-intent href="market:*" />
-        
-      	<icon src="icons/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-      	<icon src="icons/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-      	<icon src="icons/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-      	<icon src="icons/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-      	<icon src="icons/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+       </platform>     
+      	<icon src="images/icons/icon-36x36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+      	<icon src="images/icons/icon-48x48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+      	<icon src="images/icons/icon-72.png" gap:platform="android" gap:qualifier="hdpi" />
+      	<icon src="images/icons/icon-96x96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+      	<icon src="images/icons/Icon-144x144.png" gap:platform="android" gap:qualifier="xxhdpi" />
+      	<icon src="images/icons/icon-192x192.png" gap:platform="android" gap:qualifier="xxxhdpi" />
       	
-		<gap:splash src="splashScrns/ldpi.png" gap:qualifier="ldpi" />
-     	<gap:splash src="splashScrns/mdpi.png" gap:qualifier="mdpi" />
-     	<gap:splash src="splashScrns/hdpi.png" gap:qualifier="hdpi" />
-     	<gap:splash src="splashScrns/xhdpi.png" gap:qualifier="xhdpi" />
-     	<gap:splash src="splashScrns/xxhdpi.png" gap:qualifier="xxhdpi" />
-      	
-    </platform>
+		<gap:splash src="images/splashScrns/splashScreen200x320px.png" gap:qualifier="ldpi" />
+     	<gap:splash src="images/splashScrns/SplashScreen320x480px.png" gap:qualifier="mdpi" />
+     	<gap:splash src="images/splashScrns/SplashScreen480x800px_phone300.png" gap:qualifier="hdpi" />
+     	<gap:splash src="images/splashScrns/splashScreen720x1280px.png" gap:qualifier="xhdpi" />
+     	<gap:splash src="images/splashScrns/splashScreen960x1600px.png" gap:qualifier="xxhdpi" />
+		<gap:splash src="images/splashScrns/splashScreen1280x1920px.png" gap:qualifier="xxxhdpi" />      	
+
  
 	<!-- iOS -->
    
@@ -89,57 +188,56 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-   
+ 		</platform>  
     	<!-- iPhone iPhone / iPod Touch -->  
-    	<icon src="../images/icons/Icon-60.png" gap:platform="ios" width="60" height="60" />
-   		<icon src="icons/Icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+    	<icon src="images/icons/Icon-60.png" gap:platform="ios" width="60" height="60" />
+   		<icon src="images/icons/Icon-120x120.png" gap:platform="ios" width="120" height="120" />
    		
-   		<gap:splash src="splashScrns/Default.png" gap:platform="ios" width="320" height="480" />
-   		<gap:splash src="splashScrns/Default@2x.png" gap:platform="ios" width="640" height="960" />
+   		<gap:splash src="images/splashScrns/SplashScreen320x480px.png" gap:platform="ios" width="320" height="480" />  
+   														 <!-- SplashScreen320x480px.png riginally named Default.png -->
+   		<gap:splash src="images/splashScrns/Default@2x.png" gap:platform="ios" width="640" height="960" />
    		
    		<!-- iPhone 5 / iPod Touch (5th Generation) -->
-   		<gap:splash src="splashScrns/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+   		<gap:splash src="images/splashScrns/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
    		
    		
    		<!-- iPhone 6 / 6+ -->
    		
-   		<icon src="icons/Icon-60@3x.png" gap:platform="ios" width="180" height="180" />
-   		
+   		<icon src="images/icons/Icon-60@3x.png" gap:platform="ios" width="180" height="180" />
+   		 q
    		<!-- iPhone 6 -->
-   		<gap:splash src="splashScrns/Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
-   		<gap:splash src="splashScrns/Default-Portrait-736@2x.png" gap:platform="ios" width="1242" height="2208" />
+   		<gap:splash src="images/splashScrns/Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
+   		<gap:splash src="images/splashScrns/Default-Portrait-736@2x.png" gap:platform="ios" width="1242" height="2208" />
 
    		
     	<!-- iPad -->
-   		<icon src="icons/Icon-76.png" gap:platform="ios" width="76" height="76" />    	
-   		<icon src="icons/Icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+   		<icon src="images/icons/Icon-76.png" gap:platform="ios" width="76" height="76" />    	
+   		<icon src="images/icons/Icon-76@2x.png" gap:platform="ios" width="152" height="152" />
    	    
-   	    <gap:splash src="splashScrns/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
-   	    <gap:splash src="splashScrns/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />    	
+   	    <gap:splash src="images/splashScrns/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+   	    <gap:splash src="images/splashScrns/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />    	
     	    	
 		<!-- Settings Icon -->    	    	
-   		<icon src="icons/Icon-small.png" gap:platform="ios" width="29" height="29" /> 
-   		<icon src="icons/Icon-small@2x.png" gap:platform="ios" width="58" height="58" />    				
+   		<icon src="images/icons/Icon-small.png" gap:platform="ios" width="29" height="29" /> 
+   		<icon src="images/icons/Icon-small@2x.png" gap:platform="ios" width="58" height="58" />    				
 		
 
         <!-- Spotlight Icon -->
-   		<icon src="icons/Icon-Small-40.png" gap:platform="ios" width="40" height="40" />
-   		<icon src="icons/Icon-Small-40@2x.png" gap:platform="ios" width="80" height="80" />  
+   		<icon src="images/icons/Icon-Small-40.png" gap:platform="ios" width="40" height="40" />
+   		<icon src="images/icons/Icon-Small-40@2x.png" gap:platform="ios" width="80" height="80" />  
    
 		<!-- additional recommended iPhone only application icons per Apple Tables 1 & 2-->
-		 <icon src="icons/Icon-Small@3x.png" gap:platform="ios" width="87" height="87" />    
+		 <icon src="images/icons/Icon-Small@3x.png" gap:platform="ios" width="87" height="87" />    
 <!--  		 <icon src="icons/iTunesArtwork.png" gap:platform="ios" width="512" height="512" />    
   		 <icon src="icons/iTunesArtwork@2x.png" gap:platform="ios" width="1024" height="1024" /> -->   
-  		 <icon src="icons/83.5@2x.png" gap:platform="ios" width="167" height="167" />    
-  		 <icon src="icons/Icon-Small-40@3x.png" gap:platform="ios" width="120" height="120" />  
-  		 <icon src="icons/Icon.png" gap:platform="ios" width="57" height="57" />  
-  		 <icon src="icons/Icon@2x.png" gap:platform="ios" width="114" height="114" />  
-  		 <icon src="icons/Icon-72.png" gap:platform="ios" width="72" height="72" />  
-  		 <icon src="icons/Icon-72@2x.png" gap:platform="ios" width="144" height="144" />  
-  		 <icon src="icons/Icon-Small-50.png" gap:platform="ios" width="50" height="50" />  
-  		 <icon src="icons/Icon-Small-50@2x.png" gap:platform="ios" width="100" height="100" />  
-
-   
+  		 <icon src="images/icons/Icon-83.5@2x.png" gap:platform="ios" width="167" height="167" />    
+  		 <icon src="images/icons/Icon-120x120.png" gap:platform="ios" width="120" height="120" />  
+  		 <icon src="images/icons/Icon.png" gap:platform="ios" width="57" height="57" />  
+  		 <icon src="images/icons/Icon@2x.png" gap:platform="ios" width="114" height="114" />  
+  		 <icon src="images/icons/Icon-72.png" gap:platform="ios" width="72" height="72" />  
+  		 <icon src="images/icons/Icon-144x144.png" gap:platform="ios" width="144" height="144" />  
+  		 <icon src="images/icons/Icon-Small-50.png" gap:platform="ios" width="50" height="50" />  
+  		 <icon src="images/icons/Icon-Small-50@2x.png" gap:platform="ios" width="100" height="100" />  
    
 <!--  from Lynda https://www.lynda.com/PhoneGap-tutorials/Learn-PhoneGap-Build-Basics/473880-2.html -->
 <!--		<splash src="res/screen/ios/Default~iphone.png" width="320" height"480" />
@@ -148,25 +246,49 @@
 		<splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height"2008" />
 		<splash src="res/screen/ios/Default-736h.png" width="2208" height"1242" />
 		<splash src="res/screen/ios/Default-667h.png" width="750" height"1334" />
-		<splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height"1136" />  -->
-<!--  END from Lynda -->                  
-    </platform>
+		<splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height"1136" />  
+   </platform>
+-->
+   
+    <!--  END from Lynda -->                  
+
 	
-	<icon src="icons/webos/icon-64.png"          gap:platform="webos" />   <!-- need to create this -->
+	<icon src="images/icons/icon-64-webos.png"  gap:platform="webos" />   <!-- need to create this -->
 	
 <!--  from Lynda https://www.lynda.com/PhoneGap-tutorials/Learn-PhoneGap-Build-Basics/473880-2.html 
    		suggests.  Also suggested @ http://docs.phonegap.com/phonegap-build/configuring/#example
    		    <platform name="winphone" />  
    		     I went a different way ...??? 
-   		     https://github.com/phonegap/phonegap-start/blob/master/www/config.xml  -->
+   		     https://github.com/phonegap/phonegap-start/blob/master/www/config.xml 
+   		     http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/
+   		       -->
     <platform name="winphone" >
-	  	<icon src="/icons/icon-48.png"  gap:platform="winphone" />
-		<icon src="icons/icon-173.png" gap:platform="winphone" gap:role="background" />
-		<icon src="/icons/ms-icon-144x144.png"  gap:platform="winphone" />
-		<icon src="/icons/ms-icon-150x150.png"  gap:platform="winphone" />
-		<icon src="/icons/ms-icon-310x310.png"  gap:platform="winphone" />
-		<icon src="/icons/ms-icon-70x70.png"  gap:platform="winphone" />
-    </platform>
+	 </platform> 
+	 	<icon src="images/icons/icon-48x48-mdpi.png"  gap:platform="winphone" />
+	 	<icon src="images/icons/ms-icon-70x70.png"  gap:platform="winphone" width="70"  height="70" />
+		<icon src="images/icons/Icon-144x144.png"  gap:platform="winphone" />
+		<icon src="images/icons/ms-icon-150x150.png"  gap:platform="winphone" width="150" height="150"  />
+		<icon src="images/icons/icon-173.png" gap:platform="winphone" gap:role="background" />		
+		<icon src="images/icons/ms-icon-310x310.png"  gap:platform="winphone" width="310" height="310"  />
+
+ <!-- Windows Phone 8 (cordova-wp8) http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/-->   
+    <icon src="images/icons/icon.png" platform="winphone" />
+<!-- have to make these
+	<icon src="images/icons/tileicon.png" platform="winphone" role="background" />
+
+<icon platform="winphone" width="44"  height="44"  src="images/icons/Square44x44Logo.scale-100.png" />
+<icon platform="winphone" width="106" height="106" src="images/icons/Square44x44Logo.scale-240.png" />
+
+<icon platform="winphone" width="360" height="360" src="images/icons/Square150x150Logo.scale-240.png" />
+<icon platform="winphone" width="71"  height="71"  src="images/icons/Square71x71Logo.scale-100.png" />
+<icon platform="winphone" width="170" height="170" src="images/icons/Square71x71Logo.scale-240.png" />
+<icon platform="winphone" width="310" height="150" src="images/icons/Wide310x150Logo.scale-100.png" />
+<icon platform="winphone" width="744" height="360" src="images/icons/Wide310x150Logo.scale-240.png" />
+
+<icon platform="winphone" width="30"  height="30"  src="images/icons/Square30x30Logo.scale-100.png" />
+
+<icon platform="winphone" width="50"  height="50"  src="images/icons/StoreLogo.scale-100.png" />-->
+<icon platform="winphone" width="120" height="120" src="images/icons/Icon-120x120.png" />
      
 
 </widget>
