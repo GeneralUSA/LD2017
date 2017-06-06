@@ -4,15 +4,15 @@
 	xmlns="http://www.w3.org/ns/widgets" 
 	xmlns:gap="http://phonegap.com/ns/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android" 
-	versionCode = "2"   version = "1.1.3">
+	versionCode = "2"   version = "1.1.4">
 <name>Lawyers Devotional: new build</name>
 <description>test app : A Lawyer's Devotional -- Daily Scripture for the Legal Professional </description>
 	<author href="http://www.lawyersdevotional.com/"	email="4saleitems@outlook.com" >
    		Kimberly H.
    	</author>
-    <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
-        Chris Phyffer
-    </author>
+<!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
+       <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
+        Chris Phyffer </author>-->
 
 <!--  // from CP files ///   -->
     <content src="index.html" />        
@@ -45,7 +45,6 @@ FROM       http://www.developer.com/ws/getting-started-building-with-adobe-phone
 -->
 <preference name="webviewbounce" value="true"  />  <!-- it set initially to "TRUE"
 									S. Northcott said set to "FALSE" // an iOS preference 
-									
 									for Cordova 2.6.0+ from
 							https://stackoverflow.com/questions/6193016/how-to-prevent-app-running-in-phone-gap-from-scrolling-vertically
 									-->
@@ -132,14 +131,14 @@ Depending on platform, the plugins can include:
     																	S Northcoftt lesson -->
     
 <!--  Whitelists  -->
-    <access origin="*" />   <!-- Best to remove!!
+   <!-- <access origin="*" />    Best to remove!!
     			Before moving your application to production, you should formulate a whitelist and allow access to specific network domains and subdomains.
    		 		http://docs.phonegap.com/en/edge/guide_appdev_whitelist_index.md.html#Whitelist%20Guide
-   				-->
-    <access origin="" browserOnly="true" />
+      <access origin="" browserOnly="true" />
     
     <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
+    <allow-intent href="https://*/*" /> 				-->
+
     
     <allow-intent href="http://www.lawyersdevotional.com/" />
     <allow-intent href="http://www.timberlawyer.com/" />
@@ -198,7 +197,7 @@ Depending on platform, the plugins can include:
    		<gap:splash src="images/splashScrns/Default@2x.png" gap:platform="ios" width="640" height="960" />
    		
    		<!-- iPhone 5 / iPod Touch (5th Generation) -->
-   		<gap:splash src="images/splashScrns/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+   		<gap:splash src="images/splashScrns/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" /> <!--iPhone SE-->
    		
    		
    		<!-- iPhone 6 / 6+ -->
@@ -206,7 +205,7 @@ Depending on platform, the plugins can include:
    		<icon src="images/icons/Icon-60@3x.png" gap:platform="ios" width="180" height="180" />
    		 q
    		<!-- iPhone 6 -->
-   		<gap:splash src="images/splashScrns/Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
+   		<gap:splash src="images/splashScrns/Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />  <!--iPhone 7, iPhone 6s-->
    		<gap:splash src="images/splashScrns/Default-Portrait-736@2x.png" gap:platform="ios" width="1242" height="2208" />
 
    		
@@ -215,8 +214,13 @@ Depending on platform, the plugins can include:
    		<icon src="images/icons/Icon-76@2x.png" gap:platform="ios" width="152" height="152" />
    	    
    	    <gap:splash src="images/splashScrns/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
-   	    <gap:splash src="images/splashScrns/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />    	
-    	    	
+   	    <gap:splash src="images/splashScrns/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />    
+   	    <!-- additional splash -->	
+   	      	  <gap:splash src="images/splashScrns/SplashScreens12.9iPadPro-2732x2048_landscape.png" gap:platform="ios" width="2732" height="2048" />
+    	   	  <gap:splash src="images/splashScrns/Splash12.9iPadPro-2048x2732_portrait.png" gap:platform="ios" width="2048" height="2732" />  
+    	   	  <gap:splash src="images/splashScrns/SplashScreens7Plus6sPlus-1920x1080px_landscape.png" gap:platform="ios" width="1920" height="1080" />
+   	   	      <gap:splash src="images/splashScrns/Splash7Plus6sPlus-1080x1920_portrait.png" gap:platform="ios" width="1080" height="1920" />   	
+    	   	       	   	
 		<!-- Settings Icon -->    	    	
    		<icon src="images/icons/Icon-small.png" gap:platform="ios" width="29" height="29" /> 
    		<icon src="images/icons/Icon-small@2x.png" gap:platform="ios" width="58" height="58" />    				
