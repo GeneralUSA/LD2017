@@ -32,7 +32,7 @@
 <preference name="deployment-target" value="6.1.6"/>
 
 <!--  PLUGINS 	-->
-<gap:plugin name="org.apache.cordova.splashscreen" />
+<!--<gap:plugin name="org.apache.cordova.splashscreen" />  <<<<<Phonegap said not supported!-->
 
 
 <!--  // from CP files ///   -->
