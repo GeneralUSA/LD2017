@@ -1,6 +1,7 @@
 html, body, div.main {
 	background-color: #45617d;	   /*  #788897 */
 	width: 100%;
+	min-height: 100%;
 	margin: -5% 0%;
 	padding: 0%;
 	border: 0%;
@@ -139,10 +140,18 @@ div.container {
 	padding: 0% 5% 0% 1% ;
 	text-align: justify;
 	border: ridge; 
-	border-color: transparent;		/* #45617d */
+	border-color: transparent ;		/*   #45617d*/
+	box-sizing: padding-box;
+/*    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;	
+	-webkit-overflow-scrolling: ;*/
 	
 }
 
+#today {
+	min-height: 100%;
+	/*overflow: visible;*/
+}
 
 /*   #CurrentDate & h1.date both yield SAME results  */
 
@@ -155,17 +164,23 @@ div.container {
 
 h1.date {
 	font-size: 250%;
-	padding-top: 20%;
+	padding-top: 7%;
 /*	color: aqua;*/
-	margin-top: 30%;
+	margin-top: 35%;
 }
 
 
-h1, h2, h3 {
+h1 {
+	padding-left: 5%;
+	margin-top: 2%;
+	margin-left: 2%;	
+} 
+
+
+h2, h3 {
 	padding-left: 5%;
 	margin-top: 7%;
 	margin-left: 2%;
-
 }
 
 
@@ -180,11 +195,24 @@ p {
 	padding-bottom: 0%;
 }*/
 
+#CurrentVerse {
+	min-height: 100%;
+	/*font-size: 25px;
+	margin-left: -7px;*/
+	/*color: red;
+	overflow-y: scroll;*/
+	
+}
+
+
 .quote , .quote2 {
 	font-size: 130%;
 /*	font-weight: 700;  */
 	margin: 0% 3% 0% 0%;
-/*	color: red;*/
+	min-height: 100%;	
+	/*color: pink;
+
+	overflow-y: scroll;*/
 	}
 
 
@@ -193,6 +221,7 @@ p {
 	font-size: 125%;
 	font-style: italic;
 	text-align: right;
+	min-height: 100%;
 }
 
 /*.refT2 {
@@ -308,7 +337,7 @@ p {
 /*  ABOUT section */
 
 h1.about {
-	margin: 25% 0% 0% 0%;
+	margin: 20% 0% 0% 0%;
 	padding: 20% 0% 0% 4%;
 	text-shadow: 1px 1px 2px black;	
 	/*color:red;*/
