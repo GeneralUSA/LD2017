@@ -59,7 +59,7 @@
    <!-- ANDROID -->
     <platform name="android">
         <allow-intent href="market:*" />
-       </platform>     
+    </platform>     
       	<icon src="images/icons/icon-36x36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
       	<icon src="images/icons/icon-48x48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
       	<icon src="images/icons/icon-72.png" gap:platform="android" gap:qualifier="hdpi" />
@@ -81,7 +81,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
- 		</platform>  
  	
     	<!-- iPhone iPhone / iPod Touch || All non-retina iPhones & iPods -->  
     	<icon src="images/icons/Icon-60.png" gap:platform="ios" width="60" height="60" />
@@ -145,7 +144,7 @@
 	<icon src="images/icons/icon-64-webos.png"  gap:platform="webos" />  
 	
     <platform name="winphone" >
-	 </platform> 
+	</platform> 
 	 	<icon src="images/icons/icon-48x48-mdpi.png"  gap:platform="winphone" width="48"  height="48"/>
 	 	<icon src="images/icons/ms-icon-70x70.png"  gap:platform="winphone" width="70"  height="70" />
 		<icon src="images/icons/Icon-144x144.png"  gap:platform="winphone" />
