@@ -42,7 +42,7 @@ and to get PGbuild to work on iPhone 3gs.
 
 <!--  PLUGINS 	-->
 <!--<gap:plugin name="org.apache.cordova.splashscreen" />  <<<<<Phonegap said not supported!-->
-<plugin name="com.kumbe.phonegap.zoom.zoomcontrol" source="pgb" />   <!--https://build.phonegap.com/plugins/710-->
+<!--<plugin name="com.kumbe.phonegap.zoom.zoomcontrol" source="pgb" />    this doesn't build in PGB  source: https://build.phonegap.com/plugins/710-->
 <plugin name="cordova-plugin-splashscreen" spec="~4.0.3" />           <!--https://build.phonegap.com/plugins
 																	https://www.npmjs.com/package/cordova-plugin-splashscreen -->
 
