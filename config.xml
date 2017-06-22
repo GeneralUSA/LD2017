@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget 
+<widget xmlns="http://www.w3.org/ns/widgets" 
 	id="com.lawyersdevotional.iphoneapp" 
-	xmlns="http://www.w3.org/ns/widgets" 
+	
 	xmlns:gap="http://phonegap.com/ns/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android" 
-	versionCode = "2"   version = "1.1.5">
-<name>Lawyers Devotional: after meeting</name>
-<description>June builds : Daily Scripture for the Legal Professional </description>
+	versionCode = "2 alpha"   version = "1.1.6">
+<name short="LD: Alpha">Lawyers Devotional: June 21</name>
+<description>Daily Scripture for the Legal Professional ::
+June builds : working to get onto iPhones 5 and 6
+and to get RSS working AGAIN on iPhone 4
+and to get PGbuild to work on iPhone 3gs.
+ 
+</description>
 	<author href="http://www.lawyersdevotional.com/"	email="4saleitems@outlook.com" >
-   		Kimberly Hanley
+   		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
    	</author>
 <!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
        <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
         Chris Phyffer </author>-->
 <!--  also thanks to YEOMAN ///   -->
-   
+ 
+<!--<language>en</language>-->
+     
 <content src="index.html" />        
           
 <!-- PREFERENCES -->    
 <preference name="phonegap-version" value="cli-6.5.0"  />
 <preference name="orientation" value="portrait"  />
 <preference name="webviewbounce" value="true"  />
-<preference name="UIWebViewBounce" value="true" />
+<!--<preference name="UIWebViewBounce" value="true" />-->
+
+<preference name="stay-in-webview" value="false" /> 
 <preference name="DisallowOverscroll" value="false" /> 
 <preference name="StatusBarOverlaysWebView" value="false" /> 
 <preference name="StatusBarStyle" value="blackopaque" />  
@@ -33,10 +42,13 @@
 
 <!--  PLUGINS 	-->
 <!--<gap:plugin name="org.apache.cordova.splashscreen" />  <<<<<Phonegap said not supported!-->
+<plugin name="com.kumbe.phonegap.zoom.zoomcontrol" source="pgb" />   <!--https://build.phonegap.com/plugins/710-->
+<plugin name="cordova-plugin-splashscreen" spec="~4.0.3" />           <!--https://build.phonegap.com/plugins
+																	https://www.npmjs.com/package/cordova-plugin-splashscreen -->
 
 
 <!--  // from CP files ///   -->
- <plugin name="cordova-plugin-whitelist" spec="1" source="npm"/>
+ <plugin name="cordova-plugin-whitelist" spec="~1" source="npm"/>
  <gap:plugin name="cordova-plugin-statusbar" source="npm"/>   
     
 <!--  Whitelists  -->
@@ -171,5 +183,9 @@
 <icon platform="winphone" width="50"  height="50"  src="images/icons/StoreLogo.scale-100.png" />-->
 <icon platform="winphone" width="120" height="120" src="images/icons/Icon-120x120.png" />
      
+<license>
+	
+	
+</license>     
 
 </widget>
