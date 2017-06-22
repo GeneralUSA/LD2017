@@ -69,7 +69,7 @@ if(isset($_POST['email'])) {
 		
 		<!--  this is where I include my own success html here -->
 		
-		Thank you for contacting us. Will will look into this and be in touch with you soon.
+		Thank you for contacting us. Will will look into this and be in touch with you if necessary.
 			
 	<?php
 			
