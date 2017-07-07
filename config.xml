@@ -40,7 +40,7 @@
 
 
 <!--  PLUGINS 	-->
-<gap:plugin name="org.apache.cordova.splashscreen" spec="~3" />  <!--<<<<<Phonegap said not supported!-->
+<!--  <gap:plugin name="org.apache.cordova.splashscreen" spec="~3" />  <<<<<Phonegap said not supported!-->
 
 <plugin name="cordova-plugin-splashscreen" spec="~4" />           <!--https://build.phonegap.com/plugins
 																	https://www.npmjs.com/package/cordova-plugin-splashscreen -->
@@ -60,7 +60,7 @@
     <allow-intent href="https://squareup.com/market/reese-law-firm/a-lawyer-s-devotional-leather-bound" />
     <allow-intent href="https://squareup.com/store/reese-law-firm/" /> 
 
-    <allow-intent href="mailto:*" />
+    <allow-intent href="mailto:feedback.LawyersDevotional@outlook.com" />
      
     <access origin='s3.amazonaws.com'/>
     <access origin='build.phonegap.com'/>          
