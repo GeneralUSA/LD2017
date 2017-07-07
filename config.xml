@@ -41,8 +41,7 @@
 
 <!--  PLUGINS 	-->
 <gap:plugin name="org.apache.cordova.splashscreen" spec="~3" />  <!--<<<<<Phonegap said not supported!-->
-<!--<plugin name="com.kumbe.phonegap.zoom.zoomcontrol" source="pgb" />    this doesn't build in PGB -- " plugin unsupported "  
-						plugin source: https://build.phonegap.com/plugins/710-->
+
 <plugin name="cordova-plugin-splashscreen" spec="~4" />           <!--https://build.phonegap.com/plugins
 																	https://www.npmjs.com/package/cordova-plugin-splashscreen -->
 <!--<plugin name="cordova-plugin-orientation" />-->																	
