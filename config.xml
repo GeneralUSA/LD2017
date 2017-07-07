@@ -36,19 +36,14 @@
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <preference name="show-splash-screen-spinner" value="true"  />
 <preference name="deployment-target" value="6.1.6"/>
-<!--from Telerik build config-->
-
 
 <!--  PLUGINS 	-->
-<!--  <gap:plugin name="org.apache.cordova.splashscreen" spec="~3" />  <<<<<Phonegap said not supported!-->
 
-<plugin name="cordova-plugin-splashscreen" spec="~4" />           <!--https://build.phonegap.com/plugins
-																	https://www.npmjs.com/package/cordova-plugin-splashscreen -->
-<!--<plugin name="cordova-plugin-orientation" />-->																	
+<plugin name="cordova-plugin-splashscreen" spec="~4" />          										
 
 	<!--  // from CP files ///   -->
  <plugin name="cordova-plugin-whitelist" spec="~1" source="npm"/>
- <!--<gap:plugin name="cordova-plugin-statusbar" source="npm"/>-->   
+ 
     
 <!--  Whitelists  -->
     <allow-intent href="http://www.lawyersdevotional.com/" />
@@ -70,13 +65,10 @@
   	
   	<icon src="images/icons/Icon-small@2x.png" />
  	<icon src="icon.png" />														
- 														<!-- default icon for when don't know what icon to use
-  															must reside in the root of your application folder.
-  	 													 		http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/
-  	 													 -->
-  	<gap:splash src="images/splashScrns/SplashScreen320x480px.png" />	
+ 
+ 	<gap:splash src="images/splashScrns/SplashScreen320x480px.png" />	
   	
-  	<splash src="splash.png" />			<!-- default splash screen mdpi.png -->
+  	<splash src="splash.png" />		
 
    <!-- ANDROID -->
     <platform name="android">
