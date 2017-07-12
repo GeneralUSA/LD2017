@@ -35,7 +35,6 @@
 <!--  PLUGINS 	-->
 
 <plugin name="cordova-plugin-splashscreen" spec="~4" />
-<cordova plugin add cordova-plugin-splashscreen	/>
 
 	<!--  // from CP files ///   -->
  <plugin name="cordova-plugin-whitelist" spec="~1" source="npm"/>
