@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="com.lawyersdevotional.iphoneapp" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" versionCode = "1 alpha"   version = "1.1.7a">
+<widget xmlns="http://www.w3.org/ns/widgets" id="com.lawyersdevotional.iphoneapp" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" versionCode = "1 alpha"   version = "1.1.70">
 <name short="LD: Alpha">Lawyers Devotional: JulyBuilds</name>
 <description>Daily Scripture for the Legal Professional</description>
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com</author>
@@ -34,13 +34,12 @@
 
 <!--  PLUGINS 	-->
 
-<plugin name="cordova-plugin-splashscreen" spec="~4" />
+<plugin name="cordova-plugin-splashscreen"  />	<!--spec="~4"-->
 
 	<!--  // from CP files ///   -->
  <plugin name="cordova-plugin-whitelist" spec="~1" source="npm"/>
  
-    
-<!--  Whitelists  -->
+ <!--  Whitelists  -->
     <allow-intent href="http://www.lawyersdevotional.com/" />
     <allow-intent href="http://www.timberlawyer.com/" />
     <allow-intent href="https://www.archives.gov/founding-docs/*" />
