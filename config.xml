@@ -60,6 +60,15 @@
     <allow-intent href="https://squareup.com/market/reese-law-firm/a-lawyer-s-devotional-cloth-bound" />
     <allow-intent href="https://squareup.com/market/reese-law-firm/a-lawyer-s-devotional-leather-bound" />
     <allow-intent href="https://squareup.com/store/reese-law-firm/" /> 
+    
+    <allow-intent href="http://hosted.verticalresponse.com" /> 
+    <allow-intent href="http://www.ushistory.org" /> 
+    <allow-intent href="https://www.ourdocuments.gov" /> 
+    <allow-intent href="https://www.loc.gov/" />
+    <allow-intent href="http://www.abrahamlincolnonline.org/" />
+    <allow-intent href="https://www.africa.upenn.edu/" />
+    <allow-intent href="http://scholarship.law.nd.edu/" />
+    <allow-intent href="http://www.christianitytoday.com/" />
 
     <allow-intent href="mailto:feedback.LawyersDevotional@outlook.com" />
      
