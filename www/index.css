@@ -62,7 +62,7 @@ img.headerImg{
 	width: 25px;
 	height: 25px;
 	align-items: center;
-	position: fixed;
+	position: absolute;			/*changed from fixed to absolute 7-17*/
 	margin: 0px 4px 0px 0px;
 	padding: 2px 2px 0px 0px;
 }
@@ -94,6 +94,7 @@ tr {
 
 tr.td2 {
 	border: none;
+	align-content: center;    /* added 7-17*/ 
 	}
 td {
 	border: none;
@@ -103,20 +104,21 @@ td {
 /*	column-width: inherit;
 */}
 
-/*td.td1 {
+/* consider deleting td.td1, hasn't been used & experiment 7-17-17*/
+td.td1 {
 	align-items: center;
 	width: 10%;
 	background-color: #264d73; 
 	font-size: xx-large;
 	color: red;
 }
-*/
+
 td.td2 {
 	align-items: center;
 	vertical-align: middle;
 	width: 8%;
 	padding: 2% 0% 0% 4%;
-
+	float: top;				/*added 7-17. if no dif to Android, okay to delete*/
 }
 
 /* LINK SECTION COLOR CHANGE */
