@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget
 	xmlns="http://www.w3.org/ns/widgets"
-	id="com.lawyersdevotional.iphoneapp"
+	id="com.lawyersdevotional.iphoneapp2"
 	xmlns:gap="http://phonegap.com/ns/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	versionCode = "1 alpha"
-	version = "1.1.7e">
+	version = "1.1.7f">
 <name short="LD: Alpha">Lawyers Devotional</name>
-<description>July 17 Build of DW file</description>  <!--description only for pg build service, won't carry over to store-->
+<description>v1.1.7f - com.lawyersdevotional.iphoneapp2 : : July 18 Build of DW file</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com</author>
 <!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
        <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
         Chris Phyffer </author>-->
 <!--  also thanks to YEOMAN ///   -->
+
+<!-- config changes 7-18:
+ uncomment preferences phonegap-version
+ removed from whitelist plugin spec="~1" 
  
+ 
+ to make secure use phonegap-version value above 3.7.0 & add for pgb Only <gap:plugin name=cordova-plugin-whitelist source=npm>; iOS does not require whitelist
+ For iOS only, the whitelist plugin is not used. However, the <access (...)> tag is used for iOS9.
+ <access origin="*" />          < !- - Required for iOS9 - - >
+ source: https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md
+  
+  -->
+   
 <language>en</language>
 <content src="index.html" />        
           
 <!-- PREFERENCES -->    
-<!--<preference name="phonegap-version" value="cli-6.5.0"  />-->
+<preference name="phonegap-version" value="cli-6.5.0"  />
 <preference name="orientation" value="portrait"  />
 <preference name="target-device" value="universal" />         <!-- all: possible values handset, tablet, or universal -->
 <preference name="fullscreen" value="true" />         <!-- all: hides the status bar at the top of the screen -->
@@ -33,47 +45,66 @@
 <preference name="StatusBarStyle" value="blackopaque" />  
 <preference name="StatusBarBackgroundColor" value="#45617d"/>
 <preference name="SplashScreen" value="screen" />
-<preference name="SplashScreenDelay" value="3000" />	<!--https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/-->
+<preference name="SplashScreenDelay" value="4000" />	<!--https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/-->
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <preference name="show-splash-screen-spinner" value="true"  />
 <preference name="deployment-target" value="6.1.6"/>
 
 
 <!--  PLUGINS 	-->
-	<!--https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/-->
-<plugin name="cordova-plugin-splashscreen" spec="4.0.3" source="npm"/>
+	<!--https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
+	https://build.phonegap.com/plugins
+	-->
+<gap:plugin name="cordova-plugin-splashscreen" spec="4.0.3" source="npm"/>
 
 	<!--https://www.youtube.com/watch?annotation_id=annotation_918496937&feature=iv&src_vid=_0bKiLSb9Yo&v=LRY-3Rx2iIw-->	
-<plugin name="cordova-plugin-x-socialsharing" source="npm" />  	<!--https://www.npmjs.com/package/cordova-plugin-x-socialsharing-->
-<plugin name="cordova-plugin-x-toast" source="npm" />	<!--https://www.npmjs.com/package/cordova-plugin-x-toast#phonegap-build-->
-<plugin name="cordova-universal-clipboard" source="npm" />
+<gap:plugin name="cordova-plugin-x-socialsharing"  source="npm" />  	<!--https://www.npmjs.com/package/cordova-plugin-x-socialsharing-->
+<gap:plugin name="cordova-plugin-x-toast"   source="npm" />	<!--https://www.npmjs.com/package/cordova-plugin-x-toast#phonegap-build-->
+<gap:plugin name="cordova-universal-clipboard"   source="npm" />
+<gap:plugin name="cordova-plugin-globalization" spec="~1.0.7" source="npm" />	
 
 	<!--  // from CP files ///   -->
- <plugin name="cordova-plugin-whitelist" spec="~1" source="npm"/>
+ <gap:plugin name="cordova-plugin-whitelist" spec="~1.3.2" source="npm"/>
  
  <!--  Whitelists  -->
-    <allow-intent href="http://www.lawyersdevotional.com/" />
-    <allow-intent href="http://www.timberlawyer.com/" />
+    <allow-intent href="http://www.lawyersdevotional.com/*" />
+    <access origin="http://www.lawyersdevotional.com/*" /> 
+    <allow-intent href="http://www.timberlawyer.com/*" />
+    <access origin="http://www.timberlawyer.com/*" /> 
     <allow-intent href="https://www.archives.gov/founding-docs/*" />
-    <allow-intent href="http://www.loc.gov/rss/pao/news.xml" />
-    <allow-intent href="http://feed.surfing-waves.com/js/rss-feed.js" />    
+    <access origin="https://www.archives.gov/founding-docs/*" /> 
+<!--    <allow-intent href="http://www.loc.gov/rss/pao/news.xml" />
+    <access origin="http://www.loc.gov/rss/pao/news.xml" /> 
+    <allow-intent href="http://feed.surfing-waves.com/js/rss-feed.js" />
+    <access origin="*" />-->    
     <allow-intent href="https://squareup.com/market/reese-law-firm/a-lawyer-s-devotional-cloth-bound" />
+    <access origin="https://squareup.com/market/reese-law-firm/a-lawyer-s-devotional-cloth-bound" /> 
     <allow-intent href="https://squareup.com/market/reese-law-firm/a-lawyer-s-devotional-leather-bound" />
-    <allow-intent href="https://squareup.com/store/reese-law-firm/" /> 
+    <access origin="https://squareup.com/market/reese-law-firm/a-lawyer-s-devotional-leather-bound" /> 
+    <allow-intent href="https://squareup.com/store/reese-law-firm/*" /> 
+    <access origin="https://squareup.com/store/reese-law-firm/*" /> 
     
-    <allow-intent href="http://hosted.verticalresponse.com" /> 
-    <allow-intent href="http://www.ushistory.org" /> 
-    <allow-intent href="https://www.ourdocuments.gov" /> 
-    <allow-intent href="https://www.loc.gov/" />
-    <allow-intent href="http://www.abrahamlincolnonline.org/" />
-    <allow-intent href="https://www.africa.upenn.edu/" />
-    <allow-intent href="http://scholarship.law.nd.edu/" />
-    <allow-intent href="http://www.christianitytoday.com/" />
+    <allow-intent href="http://hosted.verticalresponse.com/*" /> 
+    <access origin="http://hosted.verticalresponse.com/*" /> 
+    <allow-intent href="http://www.ushistory.org/*" />
+    <access origin="http://www.ushistory.org/*" />
+    <allow-intent href="https://www.ourdocuments.gov/*" />
+    <access origin="https://www.ourdocuments.gov/*" />
+    <allow-intent href="https://www.loc.gov/*" />
+    <access origin="https://www.loc.gov/*" />
+    <allow-intent href="http://www.abrahamlincolnonline.org/*" />
+    <access origin="http://www.abrahamlincolnonline.org/*" />
+    <allow-intent href="https://www.africa.upenn.edu/*" />
+    <access origin="https://www.africa.upenn.edu/*" />
+    <allow-intent href="http://scholarship.law.nd.edu/*" />
+    <access origin="http://scholarship.law.nd.edu/*" />
+    <allow-intent href="http://www.christianitytoday.com/*" />
+    <access origin="http://www.christianitytoday.com/*" />
 
     <allow-intent href="mailto:feedback.LawyersDevotional@outlook.com" />
      
     <access origin='s3.amazonaws.com'/>
-    <access origin='build.phonegap.com'/>          
+    <access origin='build.phonegap.com/*'/>          
 
      
 <!-- ICONS & SPLASH SCREENS -->      
