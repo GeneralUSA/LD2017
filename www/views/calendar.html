@@ -6,7 +6,48 @@
     <meta name="A Lawyer's Devotional" content="Daily scriptures and other content created with the lawyer in mind.">
     <meta name="viewport" content="width=device-width">
     
-   <meta name="Content-Security-Policy" content="default-src 'self'  data: gap: https://ssl.gstatic.com ; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; ">
+   <meta name="Content-Security-Policy" content="default-src 'self'  
+    
+             data: gap: https://ssl.gstatic.com ; 
+         
+         script-src 'self' 
+         
+          cordova.js
+          ../jQueryAssets/jquery-1.11.1.min.js 
+          ../jQueryAssets/jquery.ui-1.10.4.datepicker.min.js 
+          https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js
+											 
+         script-src 'self' bower_components/jquery/dist/jquery.js
+         bower_components/angular/angular.js
+         bower_components/bootstrap/dist/js/bootstrap.js
+		 bower_components/angular-animate/angular-animate.js		 
+		 bower_components/angular-cookies/angular-cookies.js 		 
+		 bower_components/angular-resource/angular-resource.js 
+		 bower_components/angular-route/angular-route.js 		 
+		 bower_components/angular-sanitize/angular-sanitize.js 		 
+		 bower_components/angular-touch/angular-touch.js 
+		 bower_components/moment/moment.js          
+         scripts/app.js 
+         scripts/controllers/main.js          
+         scripts/controllers/calendar.js  
+         scripts/controllers/jquery.mobile-1.4.5.min.js 
+         scripts/controllers/jquery-3.1.1.min.js 
+         scripts/controllers/moment.min.js 
+         scripts/controllers/ld_script.js 
+         phonegap.js 
+         scripts/jquery.mobile-1.4.5.min.js 
+         scripts/controllers/jquery-3.1.1.min.js 
+         scripts/controllers/moment.min.js 
+         scripts/controllers/ld_script.js
+         
+          https://www.google.com/jsapi http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js  
+         https://apis.google.com
+         https://platform.twitter.com ;
+         
+         child-src 'self' https://plusone.google.com https://facebook.com https://platform.twitter.com ;
+         
+         img-src 'self'; frame-src 'self'; object-src 'self'; 
+         style-src 'self' index.css main.css bootstrap.css; " >
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -122,9 +163,9 @@
 <script src="../scripts/controllers/extras.js"></script> 
 <script type="text/javascript" src="phonegap.js"></script>     
 <!-- 2nd set of kh scripts -->
-<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<!--<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="moment.min.js"></script>
+<script type="text/javascript" src="moment.min.js"></script>-->
 <script src="../scripts/controllers/calendar2.js"></script>
 <!-- end kh added scripts -->
 

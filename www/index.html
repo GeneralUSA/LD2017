@@ -6,8 +6,39 @@
     <meta name="A Lawyer's Devotional" content="Daily scriptures and other content created with the lawyer in mind.">
     <meta name="viewport" content="width=device-width">
     
-   <meta name="Content-Security-Policy" content="default-src 'self'  data: gap: https://ssl.gstatic.com ; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; ">
-<!--   <meta name="Content-Security-Policy-Report-Only" content= "default-src 'self'  data: gap: https://ssl.gstatic.com; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; report-uri http://....com/reporting/....; ">-->
+<meta name="Content-Security-Policy" content="default-src 'self'   
+        data: gap: https://ssl.gstatic.com ;          
+        
+        script-src 'self' bower_components/jquery/dist/jquery.js
+         bower_components/angular/angular.js
+         bower_components/bootstrap/dist/js/bootstrap.js
+		 bower_components/angular-animate/angular-animate.js		 
+		 bower_components/angular-cookies/angular-cookies.js 		 
+		 bower_components/angular-resource/angular-resource.js 
+		 bower_components/angular-route/angular-route.js 		 
+		 bower_components/angular-sanitize/angular-sanitize.js 		 
+		 bower_components/angular-touch/angular-touch.js 
+		 bower_components/moment/moment.js          
+         scripts/app.js 
+         scripts/controllers/main.js          
+         scripts/controllers/calendar.js  
+         scripts/controllers/jquery.mobile-1.4.5.min.js 
+         scripts/controllers/jquery-3.1.1.min.js 
+         scripts/controllers/moment.min.js 
+         scripts/controllers/ld_script.js 
+         phonegap.js 
+         scripts/jquery.mobile-1.4.5.min.js 
+         scripts/controllers/jquery-3.1.1.min.js 
+         scripts/controllers/moment.min.js 
+         scripts/controllers/ld_script.js
+                  https://www.google.com/jsapi http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js  
+                https://apis.google.com
+         https://platform.twitter.com ;
+         child-src 'self' https://plusone.google.com https://facebook.com https://platform.twitter.com ;
+                 img-src 'self'; frame-src 'none'; object-src 'none'; 
+         style-src 'self' index.css main.css bootstrap.css; ">
+   
+<!--   <meta name="Content-Security-Policy-Report-Only" content= "default-src 'self'  data: gap: https://ssl.gstatic.com; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; report-uri http://....com/reporting/....; ">  -->
 
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory     <link rel="shortcut icon" href="favicon.ico">
@@ -47,9 +78,10 @@
  	 	 	
  <!-- endbuild -->
  
- <!--https://www.npmjs.com/package/cordova-plugin-x-socialsharing-->
+ <!--https://www.npmjs.com/package/cordova-plugin-x-socialsharing
+ FAILED message "failed to copy cordova.js -- per KerriShots, don't include both cordova.js & phonegap.js in index.html file. Also don't upload a cordova or phonegap file -- PGB will supply its own. <<< https://forums.adobe.com/message/9688053#9688053
  <script type="text/javascript" src="cordova.js"></script>
- 
+ -->
   </head>
   <body ng-app="kimberlyApp"  link="#2F4B8C">
     <!--[if lte IE 8]>
@@ -62,16 +94,14 @@
   <div id="main">
 
 	   
-<!--  navBar previously called container" | code from YT channel Frontend Tips spinning menu    onclick="toggleCP()"-->
 	  <div class="menu">
-<!--		<div class="stick"></div> --> 
+
 		<div class="img"> 
 			<img class="headerImg" src="images/SplashScreen620x300p-crop.png" 	alt="A Lawyer's Devotional" title="A daily devotional for the legal professional"> 
 		</div>
 	   
 	   <table class="menu"><tr class="td2">
-			<!--			<td class="td1">&nbsp; &equiv; </td>
-			-->	
+	
 			<td class="td2"><a href="index.html"><img class="navImg" src="images/LDlogoBW.png" alt="Home page"/><br />Home</a>&nbsp;</td>
 			<td class="td2"><a href="views/calendar.html"><img class="navImg" src="images/collection.png"  width="50px" height="10px" alt="Scripture Collection"/><br /> Calendar</a>&nbsp;</td>
 			<td class="td2"><a href="views/resources.html"><img class="navImg" src="images/wmrResources4_32x32.png"  width="50px" height="10px" alt="Miscellaneous Resources"/><br /> Extras</a>&nbsp;</td>
@@ -103,8 +133,6 @@
 </div>
 <!-- end--MEAT OF APP -->
            
-<!-- </div> << not sure why this suddenly tagged as not paired	-->
-
 	<div><footer id="footer">
 	  <p>Published by Sylvan Resources</p>
 	</footer>
@@ -144,10 +172,10 @@
     <!-- end kh added scripts -->
     
     <!-- 2nd set of kh scripts -->
-    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <!--<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="scripts/controllers/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="scripts/controllers/moment.min.js"></script>
-    <script src="scripts/controllers/ld_script.js"></script>
+    <script src="scripts/controllers/ld_script.js"></script>-->
 
 </body>
 </html>

@@ -6,8 +6,35 @@
     <meta name="About page for A Lawyer's Devotional" content="Daily scriptures and other content created with the lawyer in mind.">
     <meta name="viewport" content="width=device-width">
     
-   <meta name="Content-Security-Policy" content="default-src 'self'    data: gap: https://ssl.gstatic.com ; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; " >
-   <meta name="Content-Security-Policy-Report-Only" content= "default-src 'self'  
+   <meta name="Content-Security-Policy" content="default-src 'self' 
+	   https://www.archives.gov/founding-docs/declaration-transcript
+		https://www.archives.gov/founding-docs/constitution-transcript
+		https://www.archives.gov/founding-docs/bill-of-rights-transcript
+		http://hosted.verticalresponse.com/224864/55a47cf422/480000649/611e4e9e32/
+		http://www.ushistory.org/documents/libertydeath.htm
+		https://www.ourdocuments.gov/print_friendly.php?flash=false&page=transcript&doc=3&title=Transcript+of+Articles+of+Confederation+%281777%29
+		https://www.archives.gov/founding-docs/more-perfect-union
+		https://www.ourdocuments.gov/print_friendly.php?flash=false&page=transcript&doc=8&title=Transcript+of+Northwest+Ordinance+%281787%29
+		http://www.ushistory.org/documents/richardallen.htm
+		https://www.loc.gov/loc/lcib/9806/danpre.html
+		http://www.abrahamlincolnonline.org/lincoln/speeches/faithquotes.htm
+		https://www.africa.upenn.edu/Articles_Gen/Letter_Birmingham.html
+		http://scholarship.law.nd.edu/cgi/viewcontent.cgi?article=1674&context=ndjlepp
+		http://www.christianitytoday.com/edstetzer/2012/january/closer-look-bible-and-civil-rights.html
+         
+         data: gap: https://ssl.gstatic.com ; 
+         
+         script-src 'self' https://www.google.com/jsapi http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js  
+         
+         https://apis.google.com
+         https://platform.twitter.com ;
+         
+         child-src 'self' https://plusone.google.com https://facebook.com https://platform.twitter.com ;
+         
+         img-src 'self'; frame-src 'none'; object-src 'none'; 
+         style-src 'self' index.css main.css bootstrap.css; " >
+  <!--
+    <meta name="Content-Security-Policy-Report-Only" content= "default-src 'self'  
     https://www.archives.gov/founding-docs/declaration-transcript
     https://www.archives.gov/founding-docs/constitution-transcript
     https://www.archives.gov/founding-docs/bill-of-rights-transcript
@@ -23,7 +50,7 @@
     http://scholarship.law.nd.edu/cgi/viewcontent.cgi?article=1674&context=ndjlepp
     http://www.christianitytoday.com/edstetzer/2012/january/closer-look-bible-and-civil-rights.html
     
-    data: gap: https://ssl.gstatic.com; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; ; ">  <!--report-uri http://....com/reporting/....-->
+    data: gap: https://ssl.gstatic.com; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; report-uri http://....com/reporting/....; ">  -->
    
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -87,13 +114,13 @@
  <div id="xtras" >	  	  
 	  <h1 >Resources</h1>
 	  <ul>
-	  	<li><a href="#10">10 Commandments</a></li>
+	  	<li><a href="#topXtras">10 Commandments</a></li>
 	  	<li><a href="#constitution">U.S. Founding Documents</a></li>
 			<ul><li><a href="#charters"><em>Charters of Freedom</em></a></li>
 			<li><a href="#docsInfl"><em>Documents of Influence</em></a></li>
 			</ul>
 		<li><a href="#humble">2 Chronicles 7:14</a></li>	  	
-<!--<li><a href="#rss">Legal RSS Feed</a></li>-->
+
 	  </ul>
 
 	  <div  class="commands">
@@ -149,10 +176,6 @@
 		<td><a href="https://www.archives.gov/founding-docs/bill-of-rights-transcript" target="_blank">Bill of Rights</a><br></td>
 		</tr>
 
-<!--		<tr>
-		<td colspan="2">--------------------------------------------------------<br></td>
-		<td></td>
-		</tr>-->
 		</table>
 		
 		<h3>Documents of Influence</h3>		
@@ -244,79 +267,7 @@
 	</a></p>			
 			</div>
 	
-
-
- <!--<hr>-->
-  <!--  unnecessary additions -->	  
-<!--	<div id="rss">  
-		<h2 >Legal RSS Feed</h2>
-		<div class="feed">
-			<p >From the <a href="http://www.loc.gov/rss/pao/news.xml" target="_blank">Library of Congress</a></p>-->
-<!--	<p id="feedControl">  zzzzzzzzzzz</p>-->
-	
-<!--			<div id="waves">-->	
-							<!-- start sw-rss-feed code https://www.youtube.com/watch?v=4CW_s3vsC7A --> 
-<!--			<script type="text/javascript"> 
-			 
-			rssfeed_url = new Array(); 
-			rssfeed_url[0]="http://www.loc.gov/rss/pao/news.xml";  
-			rssfeed_frame_width="90%"; 
-			rssfeed_frame_height="250"; 
-			rssfeed_scroll="on"; 
-			rssfeed_scroll_step="6"; 
-			rssfeed_scroll_bar="on"; 
-			rssfeed_target="_blank"; 
-			rssfeed_font_size="12"; 
-			rssfeed_font_face=""; 
-			rssfeed_border="on"; 
-			rssfeed_css_url=""; 
-			rssfeed_title="on"; 
-			rssfeed_title_name=""; 
-			rssfeed_title_bgcolor="#3366ff"; 
-			rssfeed_title_color="#fff"; 
-			rssfeed_title_bgimage="http://"; 
-			rssfeed_footer="off"; 
-			rssfeed_footer_name="rss feed"; 
-			rssfeed_footer_bgcolor="#fff"; 
-			rssfeed_footer_color="#333"; 
-			rssfeed_footer_bgimage="http://"; 
-			rssfeed_item_title_length="50"; 
-			rssfeed_item_title_color="#667"; 
-			rssfeed_item_bgcolor="#fff"; 
-			rssfeed_item_bgimage="http://"; 
-			rssfeed_item_border_bottom="on"; 
-			rssfeed_item_source_icon="off"; 
-			rssfeed_item_date="on"; 
-			rssfeed_item_description="on"; 
-			rssfeed_item_description_length="120"; 
-			rssfeed_item_description_color="#667"; 
-			rssfeed_item_description_link_color="#333"; 
-			rssfeed_item_description_tag="off"; 
-			rssfeed_no_items="0"; 
-			rssfeed_cache = "ff98d82194cadd9a020a05c41c9226b7"; 
-			
-			</script> 
-			<script type="text/javascript" src="http://feed.surfing-waves.com/js/rss-feed.js"></script> -->
-			<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
-<!--			<div style="text-align:center; width:180px;"><a href="http://www.surfing-waves.com/feed.htm" target="_blank" style="color:#ccc;font-size:10px">widget @</a> <a href="http://www.surfing-waves.com" target="_blank" style="color:#ccc;font-size:10px">surfing-waves.com</a>-->
-			
-			
-			<!--</div> -->
-			<!-- end sw-rss-feed code -->
-<!--<hr>
-	<p style="font-size:medium" align="right"><a href="#topXtras"><br>
-		Back to top
-	</a></p>
-
-						
-			</div>
-		</div>
-
-	 </div>
-
-	
-	</div>-->
-</div>	
+ </div>	
 
 </div>		
 
@@ -327,7 +278,6 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
 type="text/javascript"></script>
-
-<script type="text/javascript" src="../scripts/controllers/legalrss.js"></script>				
+	
 </body>
 </html>

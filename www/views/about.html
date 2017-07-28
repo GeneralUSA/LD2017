@@ -6,7 +6,20 @@
     <meta name="About page for A Lawyer's Devotional" content="Daily scriptures and other content created with the lawyer in mind.">
     <meta name="viewport" content="width=device-width">
     
-   <meta name="Content-Security-Policy" content="default-src 'self' http://www.lawyersdevotional.com/  http://www.timberlawyer.com/ data: gap: https://ssl.gstatic.com  ; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; " >
+   <meta name="Content-Security-Policy" content="default-src 'self' http://www.lawyersdevotional.com/  http://www.timberlawyer.com/ http://www.outlook.com 
+   
+         data: gap: https://ssl.gstatic.com ; 
+         
+         script-src 'self' https://www.google.com/jsapi http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js  
+         
+         https://apis.google.com
+         https://platform.twitter.com ;
+         
+         child-src 'self' https://plusone.google.com https://facebook.com https://platform.twitter.com ;
+         
+         img-src 'self'; frame-src 'none'; object-src 'none'; 
+         style-src 'self' index.css main.css bootstrap.css; "  >
+         
 <!--   <meta name="Content-Security-Policy-Report-Only" content= "default-src 'self' http://www.timberlawyer.com/ data: gap: https://ssl.gstatic.com; script-src 'self'; img-src 'self'; frame-src 'none'; object-src 'none'; report-uri http://....com/reporting/....; ">-->
    
 
@@ -67,7 +80,7 @@
 	<div class="container" id="topAbout"> 
 	<h1 class="about" >About</h1> 
 		  <ul>
-	  	<li><a href="#book">Book</a></li>
+	  	<li><a href="#about">Book</a></li>
 	  	<li><a href="#editor">Editor</a></li>
 	  	<li><a href="#contact">Feedback</a></li>
 	  </ul>

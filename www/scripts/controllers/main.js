@@ -395,9 +395,6 @@ angular.module('kimberlyApp')
       "December 20"  :   {"quote"  :   "For the whole law is fulfilled in one word: “You shall love your neighbor as yourself.”" , "refTag"  :   "Galatians 5:14"  ,
       "quote2"  :   "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law." , "refTag2"  :   "Galatians 5:22-23"  },
       
-      
-      
-      
       "December 21"  :   {"quote"  :   "For this is the covenant that I will make with the house of Israel after those days, declares the Lord: I will put my laws into their minds, and write them on their hearts, and I will be their God, and they shall be my people." , "refTag"  :   "Hebrews 8:10"  },
       "December 22"  :   {"quote"  :   "But be doers of the word, and not hearers only, deceiving yourselves. For if anyone is a hearer of the word and not a doer, he is like a man who looks intently at his natural face in a mirror. For he looks at himself and goes away and at once forgets what he was like. But the one who looks into the perfect law, the law of liberty, and perseveres, being no hearer who forgets but a doer who acts, he will be blessed in his doing." , "refTag"  :   "James 1:22-25"  },
       "December 23"  :   {"quote"  :   "Everyone who makes a practice of sinning also practices lawlessness; sin is lawlessness. You know that he appeared to take away sins, and in him there is no sin." , "refTag"  :   "1 John 3:4-5"  },
