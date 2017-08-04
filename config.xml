@@ -6,13 +6,17 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	versionCode = "1 alpha"
 	version = "1.1.7f2">
-<name short="LD: Alpha">Lawyers Devotional</name>
-<description>v1 1 7f2 update - com.lawyersdevotional.iphoneapp2 : : Aug 4. Config update mailto with * only and update locked in plugin specs. Update html files w CSP meta tags.</description>  <!--description only for pg build service, won't carry over to store-->
-	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com</author>
-<!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
-       <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
-        Chris Phyffer </author>-->
-<!--  also thanks to YEOMAN ///   -->
+	<name short="LD: Alpha">Lawyers Devotional</name>
+	<description>
+		v1 1 7f2 update  com.lawyersdevotional.iphoneapp2  Aug 4. Config update mailto with  only and update locked in plugin specs. Update html files w CSP meta tags.
+	</description>  <!--description only for pg build service, won't carry over to store-->
+	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
+		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
+	</author>
+	<!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
+		   <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
+			Chris Phyffer </author>-->
+	<!--  also thanks to YEOMAN ///   -->
 
 <!-- config changes 7-18:
  uncomment preferences phonegap-version
@@ -51,7 +55,6 @@
 <preference name="deployment-target" value="6.1.6"/>
 
 
-
 <!--<gap:config-file platform="ios" parent="UIStatusBarHidden">
     <true/>
 </gap:config-file>
@@ -60,20 +63,24 @@
     <false/>
 </gap:config-file>-->
 
+
 <!--  PLUGINS 	-->
-	<!--https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
-	https://build.phonegap.com/plugins
-	-->
-<plugin name="cordova-plugin-splashscreen" spec="4.0.3" source="npm"/>
+	<plugin name="cordova-plugin-globalization" spec="1.0.7" source="npm" />
 
-	<!--https://www.youtube.com/watch?annotation_id=annotation_918496937&feature=iv&src_vid=_0bKiLSb9Yo&v=LRY-3Rx2iIw-->	
-<plugin name="cordova-plugin-x-socialsharing"  spec="5.1.8"  source="npm" /> <!--https://www.npmjs.com/package/cordova-plugin-x-socialsharing-->
-<plugin name="cordova-plugin-x-toast"  spec="2.6.0" source="npm" />	<!--https://www.npmjs.com/package/cordova-plugin-x-toast#phonegap-build-->
-<plugin name="cordova-universal-clipboard" spec="0.1.0"  source="npm" />
-<plugin name="cordova-plugin-globalization" spec="1.0.7" source="npm" />	
+	<plugin name="cordova-plugin-splashscreen" spec="4.0.3" source="npm"/>
+		<!--https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
+		https://build.phonegap.com/plugins
+		-->
 
-	<!--  // from CP files ///   -->
- <plugin name="cordova-plugin-whitelist" spec="1.3.2" source="npm"/>
+	<plugin name="cordova-plugin-whitelist" spec="1.3.2" source="npm"/>	<!--  // from CP files ///   -->
+
+
+		<!--https://www.youtube.com/watch?annotation_id=annotation_918496937&feature=iv&src_vid=_0bKiLSb9Yo&v=LRY-3Rx2iIw-->	
+	<plugin name="cordova-plugin-x-socialsharing"  spec="5.1.8"  source="npm" /> <!--https://www.npmjs.com/package/cordova-plugin-x-socialsharing-->
+	<plugin name="cordova-plugin-x-toast"  spec="2.6.0" source="npm" />	<!--https://www.npmjs.com/package/cordova-plugin-x-toast#phonegap-build-->
+	<plugin name="cordova-universal-clipboard" spec="0.1.0"  source="npm" />
+
+
  
  <!--  Whitelists  -->
     <allow-intent href="http://www.lawyersdevotional.com/*" />
@@ -111,7 +118,7 @@
     <access origin="http://www.christianitytoday.com/*" />
 
 <allow-intent href="mailto:*" />
-<!--    <allow-intent href="mailto:feedback.LawyersDevotional@outlook.com" />  not working -- but recall it working under previous builds, at least in Android. But v1.1.7f not working on iOS or Android PGBs -->
+<!--    <allow-intent href="mailto:feedback.LawyersDevotional@outlook.com" />  not working - - but recall it working under previous builds, at least in Android. But v1.1.7f not working on iOS or Android PGBs -->
      
     <access origin='s3.amazonaws.com'/>
     <access origin='build.phonegap.com/*'/>          
