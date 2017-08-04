@@ -7,7 +7,7 @@
 	versionCode = "1 alpha"
 	version = "1.1.7f2">
 <name short="LD: Alpha">Lawyers Devotional</name>
-<description>v1.1.7fupdate - com.lawyersdevotional.iphoneapp2 : : July 28. Config update mailto with * only and update locked in plugin specs. Update html files w CSP meta tags.</description>  <!--description only for pg build service, won't carry over to store-->
+<description>v1.1.7f2 update - com.lawyersdevotional.iphoneapp2 : : July 28. Config update mailto with * only and update locked in plugin specs. Update html files w CSP meta tags.</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com</author>
 <!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
        <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
