@@ -8,7 +8,7 @@
 	version = "1.0.0">
 	<name short="LD: Alpha">Lawyers Devotional</name>
 	<description>
-		RELEASE VERSION DRAFT com.lawyersdevotional.iphoneapp2  Aug 4. versionCode 1 version 1.0.0
+		Aug 5. RELEASE VERSION DRAFT com.lawyersdevotional.iphoneapp2  versionCode 1 version 1.0.0
 	</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
@@ -32,7 +32,7 @@
 <preference name="DisallowOverscroll" value="true" />
 <preference name="StatusBarOverlaysWebView" value="false" /> 
 <preference name="SplashScreen" value="screen" />
-<preference name="SplashScreenDelay" value="4000" />
+<preference name="SplashScreenDelay" value="3000" />  		<!--splashscreen show time-->
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <preference name="show-splash-screen-spinner" value="true"  />
 <preference name="deployment-target" value="6.1.6"/>

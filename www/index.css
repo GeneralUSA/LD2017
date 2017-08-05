@@ -322,7 +322,12 @@ p {
 /* /// end CALENDAR section */
 
 
+
 /*  ABOUT section */
+
+table.about {
+	padding: 0%,2%,0%,2% ;
+}
 
 h1.about {
 	margin: 120px 0px 0px 0px;    
@@ -402,7 +407,6 @@ input:focus, textarea:focus {
 	border-color: #000;
 }
 
-
 textarea {
   /* To properly align multiline text fields with their labels */
   vertical-align: top;
@@ -448,7 +452,6 @@ textarea {
 }*/
 
 
-
 table.share {
 	
 	bottom: 3em;
@@ -460,31 +463,45 @@ table.share {
 	vertical-align: bottom;
 }
 
+
+
+/* /////////////// */
 /*	/// EXTRAS / RESOURCES section ///*/
+
+
+/*  fixing the anchor issue sliding beneath the header
+    https://pixelflips.com/blog/anchor-links-with-a-fixed-header
+*/
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+
 #xtras {
 /*	margin: 25% 0%;
 	padding: 20% 0%;*/
 
 	margin: 120px 0px 0px 0px;
-	padding: 2% 0% 15% 0%;	
+	padding: 2% 0% 15% 0%;		/*top right bottom left*/
+	
+}
+
+#xtras>h1, h2, h3 {
+	text-shadow: none;	
+/*	color: pink;*/
+	text-shadow: 1px 1px 2px black;
 	
 	/* changed from margin-top 25% / padding-top:  15%
 	text-shadow: 1px 1px 2px black;		
-	*/
+
 	background-color: royalblue;
 	border: ridge; 
 	border-color: #45617d;
 	color:red;
-	
-	
-	
-
-}
-
-#xtras>h1, h2 {
-	text-shadow: none;	
-/*	color: pink;*/
-	text-shadow: 1px 1px 2px black;		
+	*/	
 }
 
 
@@ -522,7 +539,7 @@ p.genRef {
 
 /*
 @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
-*/
+
 
 .feed{
 	font-size: small;
@@ -543,9 +560,8 @@ color: #9CADD0;
 	width: 97%;
 	
 }
+*/
 	/* end RSS FEED */
-
-
 
 
 .highlight {

@@ -6,7 +6,7 @@
     <meta name="About page for A Lawyer's Devotional" content="Daily scriptures and other content created with the lawyer in mind.">
     <meta name="viewport" content="width=device-width">
     
-   <meta name="Content-Security-Policy" content="default-src 'self' 
+ <!--  <meta name="Content-Security-Policy" content="default-src 'self' 
 	   https://www.archives.gov/founding-docs/declaration-transcript
 		https://www.archives.gov/founding-docs/constitution-transcript
 		https://www.archives.gov/founding-docs/bill-of-rights-transcript
@@ -27,12 +27,25 @@
          script-src 'self' https://www.google.com/jsapi http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js  
          
          https://apis.google.com
-         https://platform.twitter.com ;
+         https://platform.twitter.com 
+         
+         bower_components/jquery/dist/jquery.js
+         bower_components/angular/angular.js
+         bower_components/bootstrap/dist/js/bootstrap.js
+		 bower_components/angular-animate/angular-animate.js		 
+		 bower_components/angular-cookies/angular-cookies.js 		 
+		 bower_components/angular-resource/angular-resource.js 
+		 bower_components/angular-route/angular-route.js 		 
+		 bower_components/angular-sanitize/angular-sanitize.js 		 
+		 bower_components/angular-touch/angular-touch.js 
+		 bower_components/moment/moment.js          
+         ;
          
          child-src 'self' https://plusone.google.com https://facebook.com https://platform.twitter.com ;
          
          img-src 'self'; frame-src 'none'; object-src 'none'; 
-         style-src 'self' index.css main.css bootstrap.css; " >
+         style-src 'self' index.css main.css bootstrap.css; " >-->
+         
   <!--
     <meta name="Content-Security-Policy-Report-Only" content= "default-src 'self'  
     https://www.archives.gov/founding-docs/declaration-transcript
@@ -57,8 +70,8 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
    
          <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- bower:css  kh test comment out
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />-->
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -112,17 +125,31 @@
 	  
 <div class="container" id="topXtras">  
  <div id="xtras" >	  	  
-	  <h1 >Resources</h1>
-	  <ul>
-	  	<li><a href="#topXtras">10 Commandments</a></li>
+	  <h1 >Resources test</h1>
+	  <!-- https://pixelflips.com/blog/anchor-links-with-a-fixed-header  -->
+	  <div class="header" style="position: fixed; top: 0;"></div>
+		<ul>
+			<li><a href="#section1">10 Commandments</a></li>
+			<li><a href="#section2">U.S. Founding Documents</a></li>
+				<ul>
+				<li><a href="#section2a"><em>Charters of Freedom</em></a></li>
+				<li><a href="#section2b"><em>Documents of Influence</em></a></li>
+				</ul>
+			<li><a href="#section3">2 Chronicles 7:14</a></li>
+		</ul>
+	  
+<!--	  <ul>
+	  	<li><a href="#commands">10 Commandments</a></li>
 	  	<li><a href="#constitution">U.S. Founding Documents</a></li>
 			<ul><li><a href="#charters"><em>Charters of Freedom</em></a></li>
 			<li><a href="#docsInfl"><em>Documents of Influence</em></a></li>
 			</ul>
 		<li><a href="#humble">2 Chronicles 7:14</a></li>	  	
 
-	  </ul>
+	  </ul>-->
 
+<span class="anchor" id="section1"></span><div class="section"></div>
+  
 	  <div  class="commands">
 		  <h2 id="10">Ten Commandments</h2>
 
@@ -156,9 +183,13 @@
 	</a></p>
 
 <hr>
+
+<span class="anchor" id="section2"></span><div class="section"></div>
+
 	<div id="constitution">
 		<h2>United States Founding Documents</h2>
 
+<span class="anchor" id="section2a"></span><div class="section"></div>
 		<h3>Charters of Freedom</h3>
 		<table id="charters" class="charters">
 		<tr>
@@ -177,8 +208,8 @@
 		</tr>
 
 		</table>
-		
-		<h3>Documents of Influence</h3>		
+
+<span class="anchor" id="section2b"></span><div class="section"></div>			<h3>Documents of Influence</h3>		
 		<table id="docsInfl" class="charters">
 						
 		<tr>
@@ -253,6 +284,9 @@
 	</a></p>	
 	
 <hr>
+
+<span class="anchor" id="section3"></span><div class="section"></div>
+
 	<div id="humble" class="commands">	
 
 	<p></p>
