@@ -17,7 +17,7 @@
 		   <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
 			Chris Phyffer </author>-->
 	<!--  also thanks to YEOMAN, and special thanks to stakeoverflow members Teocci & Tibrogargan ///  
-		Licenses for Apache content -- https://www.apache.org/licenses/LICENSE-2.0
+		Licenses for Apache content - - https://www.apache.org/licenses/LICENSE-2.0
 	  -->
 
 <language>en</language>
@@ -58,20 +58,26 @@
 	<plugin name="cordova-plugin-x-socialsharing"  spec="5.1.8"  source="npm" />
 	<plugin name="cordova-plugin-x-toast"  spec="2.6.0" source="npm" />
 	<plugin name="cordova-universal-clipboard" spec="0.1.0"  source="npm" />
+	
+<plugin name="com.phonegap.plugin.statusbar"  />	
 <!--	
 deletion 02 
 malformed error message
-	<plugin name="com.phonegap.plugin.statusbar"  />	https://build.phonegap.com/plugins/505-->
+still getting message ... not because of this
+think I figured out - because of double hyphens in comment regarding apache licens
+		https://build.phonegap.com/plugins/505 -->
 	
 <!-- FEATURES -->
- <!-- 
-    deletion 01
-     testing to solve malformed config.xml error on PGBuild      
-       this possibly not issue -- still getting malformed with this deleted
         <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="false" />
             		
         </feature>	
+
+ <!-- 
+    deletion 01
+     testing to solve malformed config.xml error on PGBuild      
+       this possibly not issue -- still getting malformed with this deleted
+
         https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/
 -->
  
