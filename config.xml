@@ -8,7 +8,7 @@
 	version = "1.0.0">
 	<name short="LD: Alpha">Lawyers Devotional</name>
 	<description>
-		Aug 5. RELEASE VERSION DRAFT com.lawyersdevotional.iphoneapp2  versionCode 1 version 1.0.0
+		Aug 10. RELEASE VERSION DRAFT final 02 - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2
 	</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
@@ -16,13 +16,15 @@
 	<!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
 		   <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
 			Chris Phyffer </author>-->
-	<!--  also thanks to YEOMAN ///   -->
+	<!--  also thanks to YEOMAN, and special thanks to stakeoverflow members Teocci & Tibrogargan ///   -->
 
 <language>en</language>
 <content src="index.html" />
           
 <!-- PREFERENCES -->    
 <preference name="phonegap-version" value="cli-6.5.0"  />
+
+
 <preference name="orientation" value="portrait"  />
 <preference name="target-device" value="universal" />
 <preference name="fullscreen" value="true" />
@@ -32,10 +34,11 @@
 <preference name="DisallowOverscroll" value="true" />
 <preference name="StatusBarOverlaysWebView" value="false" /> 
 <preference name="SplashScreen" value="screen" />
-<preference name="SplashScreenDelay" value="3000" />  		<!--splashscreen show time-->
+<preference name="SplashScreenDelay" value="2500" />  		<!--splashscreen show time-->
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <preference name="show-splash-screen-spinner" value="true"  />
 <preference name="deployment-target" value="6.1.6"/>
+<preference name="prerendered-icon" value="true"/>		<!--meant for Android to show app icon and not generic-->
 
 
 <!--  PLUGINS 	-->
@@ -92,12 +95,12 @@
     <platform name="android">
         <allow-intent href="market:*" />
    
-      	<icon src="www/images/icons/icon-36x36-ldpi.png"  gap:qualifier="ldpi" />
-      	<icon src="www/images/icons/icon-48x48-mdpi.png"  gap:qualifier="mdpi" />
-      	<icon src="www/images/icons/icon-72.png"  gap:qualifier="hdpi" />
-      	<icon src="www/images/icons/icon-96x96-xhdpi.png"  gap:qualifier="xhdpi" />
-      	<icon src="www/images/icons/Icon-144x144.png"  gap:qualifier="xxhdpi" />
-      	<icon src="www/images/icons/icon-192x192.png"  gap:qualifier="xxxhdpi" />
+      	<icon src="www/images/icons/icon-36x36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+      	<icon src="www/images/icons/icon-48x48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+      	<icon src="www/images/icons/icon-72.png" gap:platform="android" gap:qualifier="hdpi" />
+      	<icon src="www/images/icons/icon-96x96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+      	<icon src="www/images/icons/Icon-144x144.png" gap:platform="android" gap:qualifier="xxhdpi" />
+      	<icon src="www/images/icons/icon-192x192.png" gap:platform="android" gap:qualifier="xxxhdpi" />
   	     	
 		<splash src="www/images/splashScrns/splashScreen200x320px.png" qualifier="port-ldpi" />
      	<splash src="www/images/splashScrns/SplashScreen320x480px.png" qualifier="port-mdpi" />
@@ -189,7 +192,10 @@
 	</platform> 
 
  	     
- 	<icon src="icon.png" />	  	
-  	<splash src="splash.png" />	  	      	      	     
+ 	<icon src="icon.png" gap:role="default" />	  	<!--meant for Android to show app icon and not generic-->
+  	<splash src="splash.png" gap:role="default" />	 <!--meant for Android to show app icon and not generic-->
+<!-- support articles for Android to show app Icon and not generic icon
+https://stackoverflow.com/questions/19901059/phonegap-build-no-app-icon-on-device
+  --> 	      	      	     
 
 </widget>

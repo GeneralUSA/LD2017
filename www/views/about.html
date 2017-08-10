@@ -22,8 +22,8 @@
          
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">  
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">  
      <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
 <!--    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />-->
@@ -36,9 +36,9 @@
 
  <!-- endbuild -->	  
  
- <!--https://www.npmjs.com/package/cordova-plugin-x-socialsharing-->
+ <!--https://www.npmjs.com/package/cordova-plugin-x-socialsharing 
  <script type="text/javascript" src="cordova.js"></script>
-    
+  --> 
       
      </head>
   <body ng-app="kimberlyApp"  link="#2F4B8C">
@@ -59,12 +59,24 @@
 
 	<div class="container" id="topAbout"> 
 	<h1 class="about" >About</h1> 
-		  <ul>
+	  
+	  <!-- https://pixelflips.com/blog/anchor-links-with-a-fixed-header  -->
+	  <div class="header" style="position: fixed; top: 0;"></div>
+		<ul>
+			<li><a href="#section1">Book</a></li>
+			<li><a href="#section2">Editor</a></li>
+			<li><a href="#section3">Feedback</a></li>
+		</ul> 
+		
+<!--	  
+	  <ul>
 	  	<li><a href="#about">Book</a></li>
 	  	<li><a href="#editor">Editor</a></li>
 	  	<li><a href="#contact">Feedback</a></li>
 	  </ul>
-	   
+	   -->
+
+<span class="anchor" id="section1"></span><div class="section"></div>	   	   
 	  <table id="about">
 			<th id="book" class="thead">Book</th>
 				<tr><td class="imgTable"><img src="../images/LDhc-4.png" alt="A Lawyer's Devotional spine image" height="75" align="left" style="margin-right:20px" > This one-of-a-kind 96-page scripture compilation makes&nbsp;a&nbsp;great&nbsp;gift for the&nbsp;Christian lawyer, judge or law student, with specially selected verses for every day of the year to meditate upon law, justice, equity, mercy, compassion, judgment, prudence, wisdom, perseverance, and salvation as reflected in the Holy Bible. Available in sleek leather hard cover or cloth&nbsp;bound. Just as in the app, the devotional offers a new verse each day for meditation. All scripture quotations are from the English Standard Version (ESV) of the Bible.
@@ -79,11 +91,17 @@
 				<tr>
 					<td><hr></td>
 				</tr>
+
+<span class="anchor" id="section2"></span><div class="section"></div>		
+				
 			<th id="editor" class="thead">Editor</th>
 		<tr><td class="imgTable">
 
 			Wm. Marc Reese, Attorney at Law. For more information, <a class="aboutLink" href="http://www.timberlawyer.com/" target="_blank">click here.</a> </td></tr>
-				<tr><td><hr></td></tr>				
+				<tr><td><hr></td></tr>
+
+<span class="anchor" id="section3"></span><div class="section"></div>
+		  		  
 			<th id="contact" class="thead">Feedback</th>
 			<tr><td>If you experience any issues with this app, please <a class="aboutLink" href="mailto:feedback.LawyersDevotional@outlook.com?Subject=Feedback%20for%20Lawyer's%20Devotional%20Phone%20App" target="_top">click link</a> to email us.</td></tr>
 		  	<tr><td>
