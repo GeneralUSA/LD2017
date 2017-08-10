@@ -16,7 +16,9 @@
 	<!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
 		   <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
 			Chris Phyffer </author>-->
-	<!--  also thanks to YEOMAN, and special thanks to stakeoverflow members Teocci & Tibrogargan ///   -->
+	<!--  also thanks to YEOMAN, and special thanks to stakeoverflow members Teocci & Tibrogargan ///  
+		Licenses for Apache content -- https://www.apache.org/licenses/LICENSE-2.0
+	  -->
 
 <language>en</language>
 <content src="index.html" />
@@ -27,17 +29,25 @@
 
 <preference name="orientation" value="portrait"  />
 <preference name="target-device" value="universal" />
+<preference name="deployment-target" value="6.1.6"/>
 <preference name="fullscreen" value="true" />
 <preference name="webviewbounce" value="false"  />
 <preference name="UIWebViewBounce" value="false" />
 <preference name="stay-in-webview" value="false" />
 <preference name="DisallowOverscroll" value="true" />
-<preference name="StatusBarOverlaysWebView" value="false" /> 
+<preference name="StatusBarOverlaysWebView" value="false" />	<!--need 
+										tip: http://devgirl.org/2014/07/31/phonegap-developers-guid/
+										cannot be used with PGbuilds >  https://www.joshmorony.com/take-complete-control-of-the-ios-status-bar-with-phonegap-build/
+										https://github.com/phonegap-build/StatusBarPlugin/tree/0944be5c9f96ca0e39e0079f46ffc37894a586cd
+										Git hub > https://github.com/phonegap-build/StatusBarPlugin/tree/0944be5c9f96ca0e39e0079f46ffc37894a586cd
+										-->
+<preference name="StatusBarBackgroundColor" value="#000000"/>	<!--optional-->
+<preference name="StatusBarStyle" value="lightcontent" />		<!--optional-->
+<preference name="StatusBarStyle" value="default" />
 <preference name="SplashScreen" value="screen" />
 <preference name="SplashScreenDelay" value="2500" />  		<!--splashscreen show time-->
-<preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <preference name="show-splash-screen-spinner" value="true"  />
-<preference name="deployment-target" value="6.1.6"/>
+<preference name="AndroidPersistentFileLocation" value="Compatibility" />
 <preference name="prerendered-icon" value="true"/>		<!--meant for Android to show app icon and not generic-->
 
 
@@ -48,7 +58,13 @@
 	<plugin name="cordova-plugin-x-socialsharing"  spec="5.1.8"  source="npm" />
 	<plugin name="cordova-plugin-x-toast"  spec="2.6.0" source="npm" />
 	<plugin name="cordova-universal-clipboard" spec="0.1.0"  source="npm" />
-
+	<plugin name="com.phonegap.plugin.statusbar"  />	<!--https://build.phonegap.com/plugins/505-->
+	
+<!-- FEATURES -->
+        <feature name="StatusBar">
+            <param name="ios-package" value="CDVStatusBar" onload="false" />
+            		<!--https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/-->
+        </feature>	
  
  <!--  Whitelists  -->
     <allow-intent href="http://www.lawyersdevotional.com/*" />
