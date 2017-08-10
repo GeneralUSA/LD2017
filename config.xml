@@ -61,10 +61,14 @@
 	<plugin name="com.phonegap.plugin.statusbar"  />	<!--https://build.phonegap.com/plugins/505-->
 	
 <!-- FEATURES -->
+ <!-- 
+     testing to solve malformed config.xml error on PGBuild      
         <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="false" />
-            		<!--https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/-->
+            		
         </feature>	
+        https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/
+-->
  
  <!--  Whitelists  -->
     <allow-intent href="http://www.lawyersdevotional.com/*" />
