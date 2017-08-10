@@ -8,7 +8,7 @@
 	version = "1.0.0">
 	<name short="LD: Alpha">Lawyers Devotional</name>
 	<description>
-		Aug 10. RELEASE VERSION DRAFT final 02b - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2
+		Aug 10. RELEASE VERSION DRAFT final 02b - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - fix malform and statusbar errors
 	</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
@@ -31,6 +31,7 @@
 <preference name="target-device" value="universal" />
 <preference name="deployment-target" value="6.1.6"/>
 <preference name="fullscreen" value="true" />
+
 <preference name="webviewbounce" value="false"  />
 <preference name="UIWebViewBounce" value="false" />
 <preference name="stay-in-webview" value="false" />
@@ -40,10 +41,12 @@
 										cannot be used with PGbuilds >  https://www.joshmorony.com/take-complete-control-of-the-ios-status-bar-with-phonegap-build/
 										https://github.com/phonegap-build/StatusBarPlugin/tree/0944be5c9f96ca0e39e0079f46ffc37894a586cd
 										Git hub > https://github.com/phonegap-build/StatusBarPlugin/tree/0944be5c9f96ca0e39e0079f46ffc37894a586cd
+										see stephen northcutt - https://youtu.be/FZeqdFjsGfE?t=67
 										-->
 <preference name="StatusBarBackgroundColor" value="#000000"/>	<!--optional-->
 <preference name="StatusBarStyle" value="lightcontent" />		<!--optional-->
 <preference name="StatusBarStyle" value="default" />
+
 <preference name="SplashScreen" value="screen" />
 <preference name="SplashScreenDelay" value="2500" />  		<!--splashscreen show time-->
 <preference name="show-splash-screen-spinner" value="true"  />
@@ -59,14 +62,18 @@
 	<plugin name="cordova-plugin-x-toast"  spec="2.6.0" source="npm" />
 	<plugin name="cordova-universal-clipboard" spec="0.1.0"  source="npm" />
 	
-<plugin name="com.phonegap.plugin.statusbar"  />	
+	<plugin name="cordova-plugin-statusbar" source="npm"/>
+<!--			used with preferences webviewbounce, statusbaroverlayswebview and statusbarstyle
+			https://youtu.be/FZeqdFjsGfE?t=67  -->
 <!--	
 deletion 02 
 malformed error message
 still getting message ... not because of this
 think I figured out - because of double hyphens in comment regarding apache licens
-		https://build.phonegap.com/plugins/505 -->
-	
+		https://build.phonegap.com/plugins/505 
+<plugin name="com.phonegap.plugin.statusbar"  />	
+	this plugin apparently deprecated . using cordova-plugin-statusbar instead
+-->	
 <!-- FEATURES -->
         <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="false" />
