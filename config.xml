@@ -15,8 +15,8 @@
 	</author>
 	<!--  Much thanks and support to Chris for invaluable help and support. An awesome developer!
 		   <author email="cphyffer.123@gmail.com" href="http://pixoul.io">
-			Chris Phyffer </author>-->
-	<!--  also thanks to YEOMAN, and special thanks to stakeoverflow members Teocci & Tibrogargan ///  
+			Chris Phyffer </author>  -->
+	<!--  also thanks to YEOMAN, and special thanks to stakeoverflow members Teocci & Tibrogargan -  
 		Licenses for Apache content - - https://www.apache.org/licenses/LICENSE-2.0
 	  -->
 
@@ -35,7 +35,7 @@
 <preference name="UIWebViewBounce" value="false" />
 <preference name="stay-in-webview" value="false" />
 <preference name="DisallowOverscroll" value="true" />
-<preference name="StatusBarOverlaysWebView" value="false" />	<!--need 
+<preference name="StatusBarOverlaysWebView" value="false" />	<!--  need 
 										tip: http://devgirl.org/2014/07/31/phonegap-developers-guid/
 										cannot be used with PGbuilds >  https://www.joshmorony.com/take-complete-control-of-the-ios-status-bar-with-phonegap-build/
 										https://github.com/phonegap-build/StatusBarPlugin/tree/0944be5c9f96ca0e39e0079f46ffc37894a586cd
@@ -76,7 +76,7 @@ think I figured out - because of double hyphens in comment regarding apache lice
  <!-- 
     deletion 01
      testing to solve malformed config.xml error on PGBuild      
-       this possibly not issue -- still getting malformed with this deleted
+       this possibly not issue - - still getting malformed with this deleted
 
         https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/
 -->
