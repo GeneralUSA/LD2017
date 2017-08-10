@@ -58,11 +58,16 @@
 	<plugin name="cordova-plugin-x-socialsharing"  spec="5.1.8"  source="npm" />
 	<plugin name="cordova-plugin-x-toast"  spec="2.6.0" source="npm" />
 	<plugin name="cordova-universal-clipboard" spec="0.1.0"  source="npm" />
-	<plugin name="com.phonegap.plugin.statusbar"  />	<!--https://build.phonegap.com/plugins/505-->
+<!--	
+deletion 02 
+malformed error message
+	<plugin name="com.phonegap.plugin.statusbar"  />	https://build.phonegap.com/plugins/505-->
 	
 <!-- FEATURES -->
  <!-- 
+    deletion 01
      testing to solve malformed config.xml error on PGBuild      
+       this possibly not issue -- still getting malformed with this deleted
         <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="false" />
             		
