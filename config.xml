@@ -6,9 +6,9 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	versionCode = "1"
 	version = "1.0.0">
-	<name short="LD: Alpha">Lawyers Devotional</name>
+	<name short="LD: Beta">Lawyers Devotional</name>
 	<description>
-		Aug 12. RELEASE VERSION FINAL - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - iOS success build on Aug 10. RELEASE VERSION DRAFT final 02b - SENDING TO iTunesConnect for REVIEW
+		Aug 17. RELEASE VERSION FINAL - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - iOS success build on Aug 12. CleanUp RELEASE VERSION DRAFT final 02b - SENDING TO iTunesConnect for REVIEW
 	</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
@@ -36,13 +36,7 @@
 <preference name="UIWebViewBounce" value="false" />
 <preference name="stay-in-webview" value="false" />
 <preference name="DisallowOverscroll" value="true" />
-<preference name="StatusBarOverlaysWebView" value="false" />	<!--  need 
-										tip: http://devgirl.org/2014/07/31/phonegap-developers-guid/
-										cannot be used with PGbuilds >  https://www.joshmorony.com/take-complete-control-of-the-ios-status-bar-with-phonegap-build/
-										https://github.com/phonegap-build/StatusBarPlugin/tree/0944be5c9f96ca0e39e0079f46ffc37894a586cd
-										Git hub > https://github.com/phonegap-build/StatusBarPlugin/tree/0944be5c9f96ca0e39e0079f46ffc37894a586cd
-										see stephen northcutt - https://youtu.be/FZeqdFjsGfE?t=67
-										-->
+<preference name="StatusBarOverlaysWebView" value="false" />	
 <preference name="StatusBarBackgroundColor" value="#000000"/>	<!--optional-->
 <preference name="StatusBarStyle" value="lightcontent" />		<!--optional-->
 <preference name="StatusBarStyle" value="default" />
@@ -63,30 +57,13 @@
 	<plugin name="cordova-universal-clipboard" spec="0.1.0"  source="npm" />
 	
 	<plugin name="cordova-plugin-statusbar" source="npm"/>
-<!--			used with preferences webviewbounce, statusbaroverlayswebview and statusbarstyle
-			https://youtu.be/FZeqdFjsGfE?t=67  -->
-<!--	
-deletion 02 
-malformed error message
-still getting message ... not because of this
-think I figured out - because of double hyphens in comment regarding apache licens
-		https://build.phonegap.com/plugins/505 
-<plugin name="com.phonegap.plugin.statusbar"  />	
-	this plugin apparently deprecated . using cordova-plugin-statusbar instead
--->	
+
 <!-- FEATURES -->
         <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="false" />
             		
         </feature>	
 
- <!-- 
-    deletion 01
-     testing to solve malformed config.xml error on PGBuild      
-       this possibly not issue - - still getting malformed with this deleted
-
-        https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/
--->
  
  <!--  Whitelists  -->
     <allow-intent href="http://www.lawyersdevotional.com/*" />
@@ -232,8 +209,6 @@ think I figured out - because of double hyphens in comment regarding apache lice
  	     
  	<icon src="icon.png" gap:role="default" />	  	<!--meant for Android to show app icon and not generic-->
   	<splash src="splash.png" gap:role="default" />	 <!--meant for Android to show app icon and not generic-->
-<!-- support articles for Android to show app Icon and not generic icon
-https://stackoverflow.com/questions/19901059/phonegap-build-no-app-icon-on-device
-  --> 	      	      	     
+      	      	     
 
 </widget>
