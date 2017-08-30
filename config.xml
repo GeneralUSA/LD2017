@@ -8,7 +8,7 @@
 	version = "1.0.0">
 	<name short="LD: Beta">Lawyers Devotional</name>
 	<description>
-		Aug 17. RELEASE VERSION FINAL - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - iOS success build on Aug 12. CleanUp RELEASE VERSION DRAFT final 02b - SENDING TO iTunesConnect for REVIEW
+		Aug 29. RELEASE Draft FINAL 000 - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - iOS success build on Aug 12. CleanUp RELEASE VERSION DRAFT final 02b - SENDING TO iTunesConnect for REVIEW
 	</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
@@ -53,9 +53,9 @@
 	<plugin name="cordova-plugin-splashscreen" spec="4.0.3" source="npm"/>
 	<plugin name="cordova-plugin-whitelist" spec="1.3.2" source="npm"/>
 	<plugin name="cordova-plugin-x-socialsharing"  spec="5.1.8"  source="npm" />
-	<plugin name="cordova-plugin-x-toast"  spec="2.6.0" source="npm" />
+	<gap:plugin name="cordova-plugin-x-toast"  spec="2.6.0" source="npm" />
+	<plugin name="de.appplant.cordova.plugin.local-notification" source="npm" />
 	<plugin name="cordova-universal-clipboard" spec="0.1.0"  source="npm" />
-	
 	<plugin name="cordova-plugin-statusbar" source="npm"/>
 
 <!-- FEATURES -->
@@ -96,6 +96,21 @@
     <access origin="http://scholarship.law.nd.edu/*" />
     <allow-intent href="http://www.christianitytoday.com/*" />
     <access origin="http://www.christianitytoday.com/*" />
+    
+    <allow-intent href="http://www.kimberlytopia.com/*" /> <access origin="http://www.kimberlytopia.com/*" />
+    <allow-intent href="https://pixoul.io/*" /> <access origin="https://pixoul.io/*" />
+    <allow-intent href="https://stackoverflow.com/*" /> <access origin="https://stackoverflow.com/*" />
+    <allow-intent href="https://www.devu.com/*" /> <access origin="https://www.devu.com/*" />
+    <allow-intent href="http://orpheussoundstation.com/*" /> <access origin="http://orpheussoundstation.com/*" />
+    <allow-intent href="http://www.apache.org/licenses/" /> <access origin="http://www.apache.org/licenses/" />
+    <allow-intent href="https://opensource.org/licenses/MIT" /> <access origin="https://opensource.org/licenses/MIT" />
+    <allow-intent href="https://creativecommons.org/licenses/by-sa/3.0/" /> <access origin="https://creativecommons.org/licenses/by-sa/3.0/" />
+    
+    <allow-intent href="https://phonegap.com/about/license/" /> <access origin="https://phonegap.com/about/license/" />
+    <allow-intent href="https://docs.npmjs.com/policies/license" /> <access origin="https://docs.npmjs.com/policies/license" />
+    <allow-intent href="https://spdx.org/licenses/Apache-2.0.html" /> <access origin="https://spdx.org/licenses/Apache-2.0.html" />
+    <allow-intent href="https://github.com/*" /> <access origin="https://github.com/*" />
+    
 
 	<allow-intent href="mailto:*" />
      
