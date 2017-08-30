@@ -8,7 +8,7 @@
 	version = "1.0.0">
 	<name short="LD: Beta">Lawyers Devotional</name>
 	<description>
-		Aug 29. RELEASE Draft FINAL 000 - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - iOS success build on Aug 12. CleanUp RELEASE VERSION DRAFT final 02b - SENDING TO iTunesConnect for REVIEW
+		Aug 29. RELEASE Draft FINAL 100 - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - iOS success build on Aug 12. CleanUp RELEASE VERSION DRAFT final 02b - SENDING TO iTunesConnect for REVIEW
 	</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
@@ -102,9 +102,10 @@
     <allow-intent href="https://stackoverflow.com/*" /> <access origin="https://stackoverflow.com/*" />
     <allow-intent href="https://www.devu.com/*" /> <access origin="https://www.devu.com/*" />
     <allow-intent href="http://orpheussoundstation.com/*" /> <access origin="http://orpheussoundstation.com/*" />
-    <allow-intent href="http://www.apache.org/licenses/" /> <access origin="http://www.apache.org/licenses/" />
+    <allow-intent href="http://www.apache.org/*" /> <access origin="http://www.apache.org/*" />
     <allow-intent href="https://opensource.org/licenses/MIT" /> <access origin="https://opensource.org/licenses/MIT" />
     <allow-intent href="https://creativecommons.org/licenses/by-sa/3.0/" /> <access origin="https://creativecommons.org/licenses/by-sa/3.0/" />
+    <allow-intent href="http://goodinterfacebadinterface.tumblr.com/" /> <access origin="http://goodinterfacebadinterface.tumblr.com/" />
     
     <allow-intent href="https://phonegap.com/about/license/" /> <access origin="https://phonegap.com/about/license/" />
     <allow-intent href="https://docs.npmjs.com/policies/license" /> <access origin="https://docs.npmjs.com/policies/license" />
