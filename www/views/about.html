@@ -1,4 +1,19 @@
 <!doctype html>
+<!--
+/*		
+
+Copyright 2017  Sylvan Resources LLC
+
+Apache EULA
+
+Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0.
+  
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.
+*/
+-->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -16,6 +31,7 @@
    		 https://www.devu.com/
    		 http://orpheussoundstation.com/
    		 http://www.apache.org/
+   		 http://www.apache.org/licenses/LICENSE-2.0
    		 https://opensource.org/licenses/MIT
    		 https://creativecommons.org/licenses/by-sa/3.0/
    		 https://phonegap.com/about/license/
@@ -23,6 +39,12 @@
    		 https://spdx.org/licenses/Apache-2.0.html
    		 https://github.com/
    		 http://goodinterfacebadinterface.tumblr.com/
+   		 https://www.w3.org/TR/widgets-access/
+   		 https://cordova.apache.org/docs/en/latest/guide/appdev/whitelist/
+   		 https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md
+   		 http://docs.phonegap.com/phonegap-build/configuring/access-elements/
+   		 https://www.w3.org/TR/CSP11/
+   		 
    
          data: gap: https://ssl.gstatic.com ; 
          
@@ -73,60 +95,54 @@
 			</table>
 	  	</div>
 
-	<div class="container" id="topAbout"> 
+<div class="container" id="topAbout"> 
 	<h1 class="about" >About</h1> 
 	  
 	  <!-- https://pixelflips.com/blog/anchor-links-with-a-fixed-header  -->
 	  <div class="header" style="position: fixed; top: 0;"></div>
 	  
-	  <table>
+	<table class="thead">
 	  
-		<ul>
-			<td><li><a href="#section1">Book</a></li></td>
-			<td><li><a href="#section2">Editor</a></li></td>
-			<td><li><a href="#section3">Feedback</a></li></td>
-			<td><li><a href="#section4">Credits</a></li>	</td>		
+		<ul >
+			<td><a href="#section1">Book</a></td>
+			<td><a href="#section2">Editor</a></td>
+			<td><a href="#section3">Feedback</a></td>
+			<td><a href="#section4">Details</a></td>		
 		</ul> 
 		
-		</table>
-<!--	  
-	  <ul>
-	  	<li><a href="#about">Book</a></li>
-	  	<li><a href="#editor">Editor</a></li>
-	  	<li><a href="#contact">Feedback</a></li>
-	  </ul>
-	   -->
+	</table>
 
+<div class="aboutTables">
 <span class="anchor" id="section1"></span><div class="section"></div>	   	   
-	  <table id="about">
-			<th id="book" class="thead">Book</th>
-				<tr><td class="imgTable"><img src="../images/LDhc-4.png" alt="A Lawyer's Devotional spine image" height="75" align="left" style="margin-right:20px" > This one-of-a-kind 96-page scripture compilation makes&nbsp;a&nbsp;great&nbsp;gift for the&nbsp;Christian lawyer, judge or law student, with specially selected verses for every day of the year to meditate upon law, justice, equity, mercy, compassion, judgment, prudence, wisdom, perseverance, and salvation as reflected in the Holy Bible. Available in sleek leather hard cover or cloth&nbsp;bound. Just as in the app, the devotional offers a new verse each day for meditation. All scripture quotations are from the English Standard Version (ESV) of the Bible.
-				<i>A Lawyer's Devotional: Daily Scripture for the Legal Professional -- </i><a class="aboutLink" href="http://www.lawyersdevotional.com/" target="_blank">Buy it here.</a></td></tr>
-				<tr>
-					<td>
-						<p style="font-size:medium" align="right"><a href="#topAbout"><br>
-						Back to top
-						</a></p>
-					</td>					
-				</tr>
-				<tr>
-					<td><hr></td>
-				</tr>
-		</table>
+  <table>
+		<th id="book" class="thead2">Book</th>
+		<tr><td class="imgTable"><img src="../images/LDhc-4.png" alt="A Lawyer's Devotional spine image" height="75" align="left" style="margin-right:20px" > This one-of-a-kind 96-page scripture compilation makes&nbsp;a&nbsp;great&nbsp;gift for the&nbsp;Christian lawyer, judge or law student, with specially selected verses for every day of the year to meditate upon law, justice, equity, mercy, compassion, judgment, prudence, wisdom, perseverance, and salvation as reflected in the Holy Bible. Available in sleek leather hard cover or cloth&nbsp;bound. Just as in the app, the devotional offers a new verse each day for meditation. All scripture quotations are from the English Standard Version (ESV) of the Bible.
+		<i>A Lawyer's Devotional: Daily Scripture for the Legal Professional -- </i><a class="aboutLink" href="http://www.lawyersdevotional.com/" target="_blank">Buy it here.</a></td></tr>
+		<tr>
+			<td>
+				<p style="font-size:medium" align="right"><a href="#topAbout"><br>
+				Back to top
+				</a></p>
+			</td>					
+		</tr>
+		<tr>
+			<td><hr></td>
+		</tr>
+
 
 <span class="anchor" id="section2"></span><div class="section"></div>	
-		<table>
-				
-			<th id="editor" class="thead">Editor</th>
-		<tr><td class="imgTable">
+	<table>
 
-			Wm. Marc Reese, Attorney at Law. For more information, <a class="aboutLink" href="http://www.timberlawyer.com/" target="_blank">click here.</a> </td></tr>
+		<th id="editor" class="thead2">Editor</th>
+		<tr><td class="imgTable">
+		Wm. Marc Reese, Attorney at Law. For more information, <a class="aboutLink" href="http://www.timberlawyer.com/" target="_blank">click here.</a>
+		</td></tr>
 		<tr><td><hr></td></tr>
-		</table>
+	</table>
 		
 <span class="anchor" id="section3"></span><div class="section"></div>
 		<table>  		  
-			<th id="contact" class="thead">Feedback</th>
+			<th id="contact" class="thead2">Feedback</th>
 			<tr><td>If you experience any issues with this app, please <a class="aboutLink" href="mailto:feedback.LawyersDevotional@outlook.com?Subject=Feedback%20for%20Lawyer's%20Devotional%20Phone%20App" target="_top">click link</a> to email us.</td></tr>
 		  	<tr><td>
 
@@ -148,10 +164,10 @@
 		
 <span class="anchor" id="section4"></span><div class="section"></div>	
 <table>
-<th id="credits" class="thead">	Credits  </th>
+<th id="credits" class="thead2">	App Details  </th>
 
 <tr>
-	<td>
+	<td><span>CREDITS</span><br>
 		This application uses Open Source Code under the <a href="http://www.apache.org/licenses/">Apache</a>, <a href="https://opensource.org/licenses/MIT">MIT</a>, and <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons</a> Licenses, using <a href="https://phonegap.com/about/license/">PhoneGap Build</a> and <a href="https://docs.npmjs.com/policies/license">NPM plugins</a> as licensed under <a href="https://spdx.org/licenses/Apache-2.0.html">Apache-2.0 &amp; Open Source</a>. Many thanks to the developers of <a href="https://github.com/moment/moment/blob/develop/LICENSE">Moment.js</a>, an invaluable tool for this project.
 		
 		Developed by <a href="http://www.kimberlytopia.com">Kimberly Hanley</a> on behalf of Sylvan Resources LLC. Many, many thanks to <a href="https://pixoul.io/artist/chrisartguy">Chris Phyffer</a> who offered incredible insight, direct CODE support, moral support, and encouragement.
@@ -170,16 +186,74 @@
 			</a></p>
 		</td>					
 	</tr>
+				
+	
+	<tr>
+	<td><span>PRIVACY POLICY</span><br>
+	&nbsp;&nbsp;&nbsp;&nbsp; This Application requests internet access for the purpose of hyperlink navigation to pages upon which you click. This app does not use Cookies nor collects Personal Data from its Users. This application is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either expressed or implied.
+	</td>
+	</tr>
+	<tr>
+	<td>&nbsp;&nbsp;&nbsp; Sylvan Resources LLC reserves the right to change this privacy policy at any time. To see changes check this page for the date of the last modification. If a User objects to any portion of the changes to the Policy, the User must cease using this Application and can request that the Data Controller remove the Personal Data. Unless stated otherwise, the then-current privacy policy applies to all Personal Data the Data Controller has about Users.
+	</td></tr>
+	
+	<tr>
+		<td>
+			<p style="font-size:medium" align="right"><a href="#topAbout"><br>
+			Back to top
+			</a></p>
+		</td>					
+	</tr>	
+	
+	<tr><td><span>APP SECURITY</span><br>
+	&nbsp;&nbsp;&nbsp;&nbsp; Sylvan Resources LLC has taken measures to secure this App by allowing access to only those intended links that are referenced within the App pages. A few resources used to develop app security are listed below.
+	<ul>
+		<li><a href="https://www.w3.org/TR/widgets-access/">W3C Widget Access Request Policy</a></li>
+		<li><a href="https://cordova.apache.org/docs/en/latest/guide/appdev/whitelist/">Cordova Whitelist Guidelines</a></li>
+		<li><a href="https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md">How to Apply the Cordova/Phonegap the Whitelist System</a></li>
+		<li><a href="http://docs.phonegap.com/phonegap-build/configuring/access-elements/">PhoneGap Documentation: Access Elements</a></li>
+		<li><a href="https://www.w3.org/TR/CSP11/">W3C Content Security Policy Level 2</a></li>
+	</ul>
+				
+		</td></tr>
+
+	<tr>
+		<td>
+			<p style="font-size:medium" align="right"><a href="#topAbout"><br>
+			Back to top
+			</a></p>
+		</td>					
+	</tr>
+
+</table>
+<table>
+	
+	<tr><td><span>APP LOCATION &amp; PURCHASE</span><br>
+
+A Lawyer’s Devotional: Daily Scripture for the Legal Professional is the mobile companion app to the hard cover and leather bound gift books sold via <a href="http://www.lawyersdevotional.com/">http://www.lawyersdevotional.com/</a>.
+	
+</p>
+
+</td>
+	</tr>
+		<tr>
+		<td>
+			<p style="font-size:medium" align="right"><a href="#topAbout"><br>
+			Back to top
+			</a></p>
+		</td>					
+	</tr>
 	<tr>
 		<td><hr></td>
-	</tr>					
+	</tr>			
 <th>&nbsp;</th><tr><td>&nbsp;</td></tr>	
 </table>
-																		
-	</div>
-	
+
+  </table>
 </div>
-		
+</div>
+</div>
+				
 
 	<div><footer id="footer">
 	  <p>Published by Sylvan Resources</p>

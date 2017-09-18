@@ -129,13 +129,13 @@ div.container {
 	text-align: justify;
 	border: ridge; 
 	border-color: transparent ;		/*   #45617d*/
-	box-sizing: padding-box;
+
 	
 /* >>>>  not sure if need -- test in final*/
    -moz-box-sizing: padding-box;
     -webkit-box-sizing: padding-box;	
-	-webkit-overflow-scrolling: ;
-	
+	-webkit-overflow-scrolling: auto;	/* stop scrolling immediately */
+	box-sizing: padding-box;	
 }
 
 #today {
@@ -152,11 +152,16 @@ div.container {
 	}
 
 
-h1.date {
+h1.date {					/* TODAY'S Date header */
 	font-size: 250%;
 	padding-top: 7%;
-/*	color: aqua;*/
+
 	margin-top: 35%;
+	
+/*		color: aqua; */
+	margin: 125px 0px 0px 0px;    
+	padding: 7% 0% 0% 7%;
+	text-shadow: 1px 1px 2px black;	
 }
 
 
@@ -328,13 +333,44 @@ p {
 /*  ABOUT section */
 
 table.about {
-	padding: 0%,2%,0%,2% ;
+	padding: 10%,2%,0%,2% ;
+
+
 }
 
-h1.about {
+table.thead {					/* About bookmark links 
+	background-color: #0D2032;	*/
+	margin: 0px 0px 0px 0px;   
+	padding: 0% 0% 1% 4%;
+	
+/*	column-rule-color: pink;
+	background-color: deeppink;*/
+	
+	width: 70%;
+	
+/*	-webkit-column-count: 4;  		Chrome, Safari, Opera */
+/*    -moz-column-count: 4;  		Firefox 
+    column-count: 4;		*/
+	
+	column-width: 240px;
+	
+
+/* 	-webkit-column-gap: 2em;		Chrome, Safari, Opera */
+/*     -moz-column-gap: 2em;		Firefox 
+	column-gap: 2em;		*/
+}
+
+.aboutTables {				/* Tables of Book, editor,etc */
+	color: white;
+	/*margin: 120px 0px 0px 0px; */   
+	padding: 0% 0% 0% 4%;
+}
+
+h1.about {						/* About header */
 	margin: 120px 0px 0px 0px;    
-	padding: 2% 0% 0% 4%;
+	padding: 4% 0% 0% 4%;
 	text-shadow: 1px 1px 2px black;	
+/*	color: hotpink;*/
 	
 	/* changed from margin-top / padding-top:  20% 
 	background-color: royalblue;
