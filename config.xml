@@ -8,7 +8,7 @@
 	version = "1.0.0">
 	<name short="LD: Beta">Lawyers Devotional</name>
 	<description>
-		Sept 18. RELEASE FINAL - add pushNotifications -- versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - iOS success build on Aug 12. CleanUp RELEASE VERSION DRAFT final 02b - SENDING TO iTunesConnect for REVIEW
+		Oct 5 2017 2ndFINAL - add pushNotifications - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2
 	</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
