@@ -8,7 +8,7 @@
 	version = "1.0.0">
 	<name short="LD: Beta">Lawyers Devotional</name>
 	<description>
-		Sept 18. RELEASE FINAL - add pushNotifications -- versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2 - iOS success build on Aug 12. CleanUp RELEASE VERSION DRAFT final 02b - SENDING TO iTunesConnect for REVIEW
+		Oct 6 2017 2ndFINAL - pushNotif plugin - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2
 	</description>  <!--description only for pg build service, won't carry over to store-->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
@@ -36,10 +36,10 @@
 <preference name="UIWebViewBounce" value="false" />
 <preference name="stay-in-webview" value="false" />
 <preference name="DisallowOverscroll" value="true" />
-<preference name="StatusBarOverlaysWebView" value="false" />	
+<preference name="StatusBarOverlaysWebView" value="true" />		<!--old build false-->
 <preference name="StatusBarBackgroundColor" value="#000000"/>	<!--optional-->
-<preference name="StatusBarStyle" value="lightcontent" />		<!--optional-->
-<preference name="StatusBarStyle" value="default" />
+<preference name="StatusBarStyle" value="lightcontent" />		<!--optional
+<preference name="StatusBarStyle" value="default" />		-->
 
 <preference name="SplashScreen" value="screen" />
 <preference name="SplashScreenDelay" value="2000" />  		<!--splashscreen show time-->
