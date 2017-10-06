@@ -8,12 +8,8 @@
 	version = "1.0.0">
 	<name short="LD: Beta">Lawyers Devotional</name>
 	<description>
-<<<<<<< HEAD
 		Oct 6 2017 2ndFINAL - pushNotif plugin - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2
-=======
-		Oct 5 2017 2ndFINAL - add pushNotifications - versionCode 1 version 1.0.0 - com.lawyersdevotional.iphoneapp2
->>>>>>> b378887d3fd7f567af9bfa7842f05ccaad4ec632
-	</description>  <!--description only for pg build service, won't carry over to store-->
+	</description>  <!-- description only for pg build service, won't carry over to store -->
 	<author href="http://www.lawyersdevotional.com/" email="feedback.LawyersDevotional@outlook.com" >
 		Kimberly Hanley and Chris Phyffer on behalf of TimberLawyer.com
 	</author>
@@ -40,16 +36,16 @@
 <preference name="UIWebViewBounce" value="false" />
 <preference name="stay-in-webview" value="false" />
 <preference name="DisallowOverscroll" value="true" />
-<preference name="StatusBarOverlaysWebView" value="true" />		<!--old build false-->
-<preference name="StatusBarBackgroundColor" value="#000000"/>	<!--optional-->
-<preference name="StatusBarStyle" value="lightcontent" />		<!--optional
-<preference name="StatusBarStyle" value="default" />		-->
+<preference name="StatusBarOverlaysWebView" value="true" />		<!-- old build false -->
+<preference name="StatusBarBackgroundColor" value="#000000"/>	<!-- optional -->
+<preference name="StatusBarStyle" value="lightcontent" />		<!-- optional
+<preference name="StatusBarStyle" value="default" / >		-->
 
 <preference name="SplashScreen" value="screen" />
 <preference name="SplashScreenDelay" value="2000" />  		<!--splashscreen show time-->
 <preference name="show-splash-screen-spinner" value="true"  />
 <preference name="AndroidPersistentFileLocation" value="Compatibility" />
-<preference name="prerendered-icon" value="true"/>		<!--meant for Android to show app icon and not generic-->
+<preference name="prerendered-icon" value="true"/>		<!-- meant for Android to show app icon and not generic -->
 
 
 <!--  PLUGINS 	-->
