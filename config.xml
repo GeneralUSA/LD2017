@@ -36,7 +36,7 @@
 <preference name="UIWebViewBounce" value="false" />
 <preference name="stay-in-webview" value="false" />
 <preference name="DisallowOverscroll" value="true" />
-<preference name="StatusBarOverlaysWebView" value="true" />		<!-- old build false -->
+<preference name="StatusBarOverlaysWebView" value="false" />		<!-- true overlays banner -->
 <preference name="StatusBarBackgroundColor" value="#000000"/>	<!-- optional -->
 <preference name="StatusBarStyle" value="lightcontent" />		<!-- optional
 <preference name="StatusBarStyle" value="default" / >		-->
